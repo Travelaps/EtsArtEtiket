@@ -1,0 +1,169 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ArtEtiket.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Ek4Aciklama" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Ek4</Value>
+    </Setting>
+    <Setting Name="Ek5Aciklama" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Ek5</Value>
+    </Setting>
+    <Setting Name="Ek6Aciklama" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Ek6</Value>
+    </Setting>
+    <Setting Name="Ek7Aciklama" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Ek7</Value>
+    </Setting>
+    <Setting Name="Ek8Aciklama" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Ek8</Value>
+    </Setting>
+    <Setting Name="Ek9Aciklama" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Ek9</Value>
+    </Setting>
+    <Setting Name="Ek10Aciklama" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Ek10</Value>
+    </Setting>
+    <Setting Name="AlimDepoID" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="ParcalanacakStokListesi" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">2,404,406,411,416,2822</Value>
+    </Setting>
+    <Setting Name="ComPort" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">COM4</Value>
+    </Setting>
+    <Setting Name="ComPort_BaudRate" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">9600</Value>
+    </Setting>
+    <Setting Name="TeraziBilgiAlmaSuresi_msec" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">500</Value>
+    </Setting>
+    <Setting Name="TeraziBilgiAlmaSuresi2_msec" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">50</Value>
+    </Setting>
+    <Setting Name="TeraziBilgiIncelemeAktif" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="TeraziModel" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">30KG</Value>
+    </Setting>
+    <Setting Name="StokButonYukseklik" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">70</Value>
+    </Setting>
+    <Setting Name="StokButonGenislik" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">140</Value>
+    </Setting>
+    <Setting Name="BarkodPrinterName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">BARKOD</Value>
+    </Setting>
+    <Setting Name="StokAdiAciklama" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Stok Adı</Value>
+    </Setting>
+    <Setting Name="StokKoduAciklama" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Stok Kodu</Value>
+    </Setting>
+    <Setting Name="test" Type="System.String" Scope="User">
+      <Value Profile="(Default)">test</Value>
+    </Setting>
+    <Setting Name="Ek1Aciklama" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Ek1</Value>
+    </Setting>
+    <Setting Name="Ek2Aciklama" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Ek2</Value>
+    </Setting>
+    <Setting Name="Ek3Aciklama" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Ek3</Value>
+    </Setting>
+    <Setting Name="SqlConStr" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=192.168.2.254;Initial Catalog=ETS_V5;Persist Security Info=True;User ID=arteus;Password=14220408&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=192.168.2.254;Initial Catalog=ETS_V5;Persist Security Info=True;User ID=arteus;Password=14220408</Value>
+    </Setting>
+    <Setting Name="Label1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Stok Kodu</Value>
+    </Setting>
+    <Setting Name="Label2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Stok Adı</Value>
+    </Setting>
+    <Setting Name="Label3" Type="System.String" Scope="User">
+      <Value Profile="(Default)">İçindekiler</Value>
+    </Setting>
+    <Setting Name="Label4" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Ek4</Value>
+    </Setting>
+    <Setting Name="Label5" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Ek5</Value>
+    </Setting>
+    <Setting Name="Label6" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Ek6</Value>
+    </Setting>
+    <Setting Name="Label7" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Ek7</Value>
+    </Setting>
+    <Setting Name="Label8" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Ek8</Value>
+    </Setting>
+    <Setting Name="Label9" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Ek9</Value>
+    </Setting>
+    <Setting Name="Label10" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Ek10</Value>
+    </Setting>
+    <Setting Name="Label11" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Ek11</Value>
+    </Setting>
+    <Setting Name="Label12" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Ek12</Value>
+    </Setting>
+    <Setting Name="Server" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Login" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Password" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Database" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MamulGrupButonlariAktif" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SubeButonlariAktif" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="StokKodunuGoster" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="KoliSistemiAktif" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="StokGrupButonYukseklik" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">70</Value>
+    </Setting>
+    <Setting Name="StokGrupButonGenislik" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">85</Value>
+    </Setting>
+    <Setting Name="SqlConStr222" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=192.168.2.254;Initial Catalog=ETS_V5;Persist Security Info=True;User ID=arteus;Password=14220408&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=192.168.2.254;Initial Catalog=ETS_V5;Persist Security Info=True;User ID=arteus;Password=14220408</Value>
+    </Setting>
+    <Setting Name="VarsayilanEtiket" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">imren</Value>
+    </Setting>
+    <Setting Name="Onizleme" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="StokGruplariSatirSayisi" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

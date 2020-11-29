@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="12/30/2013 12:45:17" ReportInfo.Modified="04/16/2016 15:10:21" ReportInfo.CreatorVersion="2013.1.9.0">
+  <Dictionary>
+    <MsSqlDataConnection Name="Connection" ConnectionString="rijcmlqdu5+hLGpU4W6LagpShoWq8hl2O2pyvhCFZ5tkckqSDeLokqXGOH6DSl6zfayBlZ6DY0XeSNYACLairBDtIYZgwpx00USAinYx5WnwKPS/s1SLgSFALN7hWqSFLxo6F3RMD6xRYKfg2SpCkH55W8l8xCQrmSnICt/lqyyczsA2YQYlJ1cCf3ktio0dDt7KDJ7LejQO6YWNCCdPq2hzR+Ysg==" LoginPrompt="true">
+      <TableDataSource Name="HAREKETISL" DataType="System.Int32" Enabled="true" TableName="HAREKETISL">
+        <Column Name="HAREKETISLID" DataType="System.Int32"/>
+        <Column Name="HAREKETID" DataType="System.Int32"/>
+        <Column Name="STOKID" DataType="System.Int32"/>
+        <Column Name="ETIKETADET" DataType="System.Int32"/>
+        <Column Name="MIKTAR" DataType="System.Double"/>
+        <Column Name="BIRIM" DataType="System.String"/>
+        <Column Name="BFIYAT" DataType="System.Double"/>
+        <Column Name="PARTINO" DataType="System.String"/>
+        <Column Name="YAZDIRILDI" DataType="System.Boolean" BindableControl="CheckBox"/>
+      </TableDataSource>
+    </MsSqlDataConnection>
+    <TableDataSource Name="Etiket" ReferenceName="Etiket" DataType="System.Int32" Enabled="true">
+      <Column Name="ID" DataType="System.Int32"/>
+      <Column Name="TARIH" DataType="System.DateTime"/>
+      <Column Name="ENO" DataType="System.String"/>
+      <Column Name="TUR" DataType="System.String"/>
+      <Column Name="ETIKETTURU" DataType="System.String"/>
+      <Column Name="GDEPO" DataType="System.String"/>
+      <Column Name="CDEPO" DataType="System.String"/>
+      <Column Name="VDNO" DataType="System.String"/>
+      <Column Name="VD" DataType="System.String"/>
+      <Column Name="ADRES1" DataType="System.String"/>
+      <Column Name="ADRES2" DataType="System.String"/>
+      <Column Name="ADRES3" DataType="System.String"/>
+      <Column Name="URETIMID" DataType="System.Int32"/>
+      <Column Name="URETIMTURU" DataType="System.String"/>
+      <Column Name="YAZ" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="HAREKETISLID" DataType="System.Int32"/>
+      <Column Name="BIRIM" DataType="System.String"/>
+      <Column Name="SKTARIHI" DataType="System.DateTime"/>
+      <Column Name="ADI" DataType="System.String"/>
+      <Column Name="KOPYASAYISI" DataType="System.Int32"/>
+      <Column Name="MIKTAR" DataType="System.Double"/>
+      <Column Name="PARTINO" DataType="System.String"/>
+      <Column Name="ACIKLAMA" DataType="System.String"/>
+      <Column Name="ICINDEKILER" DataType="System.String"/>
+      <Column Name="EK2" DataType="System.String"/>
+      <Column Name="EK3" DataType="System.String"/>
+      <Column Name="EK4" DataType="System.String"/>
+      <Column Name="NETAGIRLIK" DataType="System.String"/>
+      <Column Name="NOT" DataType="System.String"/>
+      <Column Name="OZELKOD6" DataType="System.String"/>
+      <Column Name="ETIKETEK2" DataType="System.String"/>
+      <Column Name="ETIKETEK3" DataType="System.String"/>
+      <Column Name="ETIKETEK4" DataType="System.String"/>
+      <Column Name="ETIKETEK5" DataType="System.String"/>
+      <Column Name="ETIKETEK6" DataType="System.String"/>
+      <Column Name="ETIKETEK7" DataType="System.String"/>
+      <Column Name="ETIKETEK8" DataType="System.String"/>
+      <Column Name="ETIKETEK9" DataType="System.String"/>
+      <Column Name="ETIKETEK10" DataType="System.String"/>
+      <Column Name="ETIKETEK1" DataType="System.String"/>
+    </TableDataSource>
+  </Dictionary>
+  <ReportPage Name="Page1" PaperWidth="100" PaperHeight="70" LeftMargin="0" TopMargin="0" RightMargin="0" BottomMargin="0" FirstPageSource="256" OtherPagesSource="256">
+    <ReportTitleBand Name="ReportTitle1" Width="378" Height="264.6">
+      <TextObject Name="Text2" Left="3.78" Width="37.8" Height="170.1" CanBreak="false" Text="KRAL TAVUKÇULUK&#13;&#10;" Angle="270" WordWrap="false" Font="Tahoma, 7pt, style=Bold"/>
+      <TextObject Name="Text4" Left="31.8" Width="22.68" Height="170.1" Text="MENŞEİ ÜLKE : TÜRKİYE" VertAlign="Center" Angle="270" Font="Tahoma, 7pt"/>
+      <TextObject Name="Text8" Left="114.63" Top="9.45" Width="28.35" Height="245.7" Text="İÇİNDEKİLER : [Etiket.ICINDEKILER]" Angle="270" Font="Tahoma, 7pt"/>
+      <BarcodeObject Name="Barcode1" Left="200.34" Top="36.69" Width="132.3" Height="37.8" Angle="180" AutoSize="false" DataColumn="Etiket.PARTINO" ShowText="false" Barcode="Code128" Barcode.AutoEncode="true"/>
+      <TextObject Name="Text9" Left="169.88" Top="207.9" Width="18.9" Height="47.25" Text="Ü.T" Angle="270" Font="Tahoma, 9pt, style=Bold"/>
+      <TextObject Name="Text12" Left="257.05" Top="56.7" Width="26.46" Height="198.45" Text="[Etiket.ETIKETEK4]" Angle="270" Font="Tahoma, 7pt"/>
+      <TextObject Name="Text13" Left="323.09" Top="56.7" Width="34.02" Height="198.45" Text="[Etiket.ETIKETEK6]" Angle="270" Font="Tahoma, 7pt, style=Bold"/>
+      <TextObject Name="Text14" Left="58.05" Top="9.45" Width="54.81" Height="245.7" Text="[Etiket.ADI]" Angle="270" Font="Tahoma, 14.5pt"/>
+      <TextObject Name="Text15" Left="169.88" Top="113.4" Width="18.9" Height="85.05" Text="[Etiket.TARIH]" Angle="270" Font="Tahoma, 9pt">
+        <Formats>
+          <DateFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text20" Left="169.88" Top="198.45" Width="18.9" Height="9.45" Text=":&#13;&#10;:&#13;&#10;:" Format="Date" Format.Format="d" VertAlign="Center" Angle="270" Font="Tahoma, 9pt, style=Bold"/>
+      <TextObject Name="Text3" Left="190.89" Top="18.9" Width="141.75" Height="18.9" Text="Parti No: [Etiket.PARTINO]" Angle="180" Font="Tahoma, 8pt, style=Bold"/>
+      <ShapeObject Name="Shape1" Left="5.55" Top="176.55" Width="37.8" Height="75.6" Shape="Ellipse"/>
+      <TextObject Name="Text26" Left="283.3" Top="56.7" Width="39.69" Height="198.45" Text="[Etiket.ETIKETEK5]" Angle="270" Font="Tahoma, 7pt"/>
+      <TextObject Name="Text27" Left="144.75" Top="56.7" Width="18.9" Height="198.45" Text="[Etiket.ETIKETEK2]" Angle="270" Font="Tahoma, 7pt, style=Bold, Italic"/>
+      <TextObject Name="Text28" Left="5.67" Top="176.53" Width="37.8" Height="75.6" Text="TR&#13;&#10;35 - 0425" HorzAlign="Center" VertAlign="Center" Angle="270" Font="Arial, 7pt, style=Bold"/>
+      <TextObject Name="Text29" Left="237.7" Top="56.7" Width="18.9" Height="198.45" Text="[Etiket.ETIKETEK3]" Angle="270" Font="Tahoma, 7pt"/>
+      <TextObject Name="Text30" Left="189" Top="207.9" Width="18.9" Height="47.25" Text="S.T.T" Angle="270" Font="Tahoma, 9pt, style=Bold"/>
+      <TextObject Name="Text31" Left="189" Top="113.4" Width="18.9" Height="85.05" Text="[Etiket.SKTARIHI]" Angle="270" Font="Tahoma, 9pt">
+        <Formats>
+          <DateFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text32" Left="189" Top="198.45" Width="18.9" Height="9.45" Text=":&#13;&#10;:&#13;&#10;:" Format="Date" Format.Format="d" VertAlign="Center" Angle="270" Font="Tahoma, 9pt, style=Bold"/>
+      <TextObject Name="Text33" Left="208.35" Top="207.9" Width="18.9" Height="47.25" Text="NET" Angle="270" Font="Tahoma, 9pt, style=Bold"/>
+      <TextObject Name="Text34" Left="208.35" Top="113.4" Width="18.9" Height="85.05" Text="[Etiket.MIKTAR] [Etiket.BIRIM]" Angle="270" Font="Tahoma, 9pt">
+        <Formats>
+          <GeneralFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text35" Left="208.35" Top="198.45" Width="18.9" Height="9.45" Text=":&#13;&#10;:&#13;&#10;:" Format="Date" Format.Format="d" VertAlign="Center" Angle="270" Font="Tahoma, 9pt, style=Bold"/>
+      <TextObject Name="Text19" Left="20.9" Width="18.9" Height="170.1" CanBreak="false" Text="1203 Sk. No:20 20/B Sarnıç / İZMİR" VertAlign="Bottom" Angle="270" WordWrap="false" Font="Tahoma, 7pt"/>
+    </ReportTitleBand>
+  </ReportPage>
+</Report>

@@ -1,0 +1,201 @@
+d:\users\hakan aydin\documents\visual studio 2010\Projects\ArtEtiket\ArtEtiket\bin\Debug\ArtEtiket.exe.config
+d:\users\hakan aydin\documents\visual studio 2010\Projects\ArtEtiket\ArtEtiket\bin\Debug\ArtEtiket.exe
+d:\users\hakan aydin\documents\visual studio 2010\Projects\ArtEtiket\ArtEtiket\bin\Debug\ArtEtiket.pdb
+d:\users\hakan aydin\documents\visual studio 2010\Projects\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.frmMain.resources
+d:\users\hakan aydin\documents\visual studio 2010\Projects\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.frmStok.resources
+d:\users\hakan aydin\documents\visual studio 2010\Projects\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.frmStokDetay.resources
+d:\users\hakan aydin\documents\visual studio 2010\Projects\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.Properties.Resources.resources
+d:\users\hakan aydin\documents\visual studio 2010\Projects\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.csproj.GenerateResource.Cache
+d:\users\hakan aydin\documents\visual studio 2010\Projects\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.exe
+d:\users\hakan aydin\documents\visual studio 2010\Projects\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.pdb
+d:\users\hakan aydin\documents\visual studio 2010\Projects\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.csprojResolveAssemblyReference.cache
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2010\Projects\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.frmLabel.resources
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2010\Projects\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.frmConnections.resources
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2010\Projects\ArtEtiket\ArtEtiket\bin\Debug\Microsoft.VisualStudio.Data.dll
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2010\Projects\Arteus Uretim\ArtEtiket\bin\Debug\ArtEtiket.exe.config
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2010\Projects\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.exe
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2010\Projects\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.pdb
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2010\Projects\Arteus Uretim\ArtEtiket\bin\Debug\ArtEtiket.exe
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2010\Projects\Arteus Uretim\ArtEtiket\bin\Debug\ArtEtiket.pdb
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2010\Projects\Arteus Uretim\ArtEtiket\bin\Debug\Microsoft.VisualStudio.Data.dll
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2010\Projects\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.csprojResolveAssemblyReference.cache
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2010\Projects\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmConnections.resources
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2010\Projects\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmLabel.resources
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2010\Projects\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmMain.resources
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2010\Projects\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmStok.resources
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2010\Projects\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmStokDetay.resources
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2010\Projects\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.Properties.Resources.resources
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2010\Projects\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.csproj.GenerateResource.Cache
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2010\Projects\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmUretim.resources
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2010\Projects\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmFaturaDetay.resources
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2010\Projects\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmParcalama.resources
+D:\Users\Hakan AYDIN\Google Drive\Arteus\Projeler\Ekmekiçi\Arteus Uretim\ArtEtiket\bin\Debug\ArtEtiket.exe.config
+D:\Users\Hakan AYDIN\Google Drive\Arteus\Projeler\Ekmekiçi\Arteus Uretim\ArtEtiket\bin\Debug\ArtEtiket.exe
+D:\Users\Hakan AYDIN\Google Drive\Arteus\Projeler\Ekmekiçi\Arteus Uretim\ArtEtiket\bin\Debug\ArtEtiket.pdb
+D:\Users\Hakan AYDIN\Google Drive\Arteus\Projeler\Ekmekiçi\Arteus Uretim\ArtEtiket\bin\Debug\Microsoft.VisualStudio.Data.dll
+D:\Users\Hakan AYDIN\Google Drive\Arteus\Projeler\Ekmekiçi\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.csprojResolveAssemblyReference.cache
+D:\Users\Hakan AYDIN\Google Drive\Arteus\Projeler\Ekmekiçi\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmConnections.resources
+D:\Users\Hakan AYDIN\Google Drive\Arteus\Projeler\Ekmekiçi\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmFaturaDetay.resources
+D:\Users\Hakan AYDIN\Google Drive\Arteus\Projeler\Ekmekiçi\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmLabel.resources
+D:\Users\Hakan AYDIN\Google Drive\Arteus\Projeler\Ekmekiçi\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmMain.resources
+D:\Users\Hakan AYDIN\Google Drive\Arteus\Projeler\Ekmekiçi\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmStok.resources
+D:\Users\Hakan AYDIN\Google Drive\Arteus\Projeler\Ekmekiçi\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmStokDetay.resources
+D:\Users\Hakan AYDIN\Google Drive\Arteus\Projeler\Ekmekiçi\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmParcalama.resources
+D:\Users\Hakan AYDIN\Google Drive\Arteus\Projeler\Ekmekiçi\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmUretim.resources
+D:\Users\Hakan AYDIN\Google Drive\Arteus\Projeler\Ekmekiçi\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.Properties.Resources.resources
+D:\Users\Hakan AYDIN\Google Drive\Arteus\Projeler\Ekmekiçi\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.csproj.GenerateResource.Cache
+D:\Users\Hakan AYDIN\Google Drive\Arteus\Projeler\Ekmekiçi\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.exe
+D:\Users\Hakan AYDIN\Google Drive\Arteus\Projeler\Ekmekiçi\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.pdb
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2015\Projects\Arteus Uretim\ArtEtiket\bin\Debug\ArtEtiket.exe.config
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2015\Projects\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.exe
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2015\Projects\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.pdb
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2015\Projects\Arteus Uretim\ArtEtiket\bin\Debug\ArtEtiket.exe
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2015\Projects\Arteus Uretim\ArtEtiket\bin\Debug\ArtEtiket.pdb
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2015\Projects\Arteus Uretim\ArtEtiket\bin\Debug\Microsoft.VisualStudio.Data.dll
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2015\Projects\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmConnections.resources
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2015\Projects\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmFaturaDetay.resources
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2015\Projects\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmLabel.resources
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2015\Projects\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmMain.resources
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2015\Projects\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmStok.resources
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2015\Projects\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmStokDetay.resources
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2015\Projects\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmParcalama.resources
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2015\Projects\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmUretim.resources
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2015\Projects\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.Properties.Resources.resources
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2015\Projects\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.csproj.GenerateResource.Cache
+D:\Arteus\Projeler\Ekmekiçi\Arteus Uretim\ArtEtiket\bin\Debug\ArtEtiket.exe.config
+D:\Arteus\Projeler\Ekmekiçi\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.exe
+D:\Arteus\Projeler\Ekmekiçi\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.pdb
+D:\Arteus\Projeler\Ekmekiçi\Arteus Uretim\ArtEtiket\bin\Debug\ArtEtiket.exe
+D:\Arteus\Projeler\Ekmekiçi\Arteus Uretim\ArtEtiket\bin\Debug\ArtEtiket.pdb
+D:\Arteus\Projeler\Ekmekiçi\Arteus Uretim\ArtEtiket\bin\Debug\FastReport.Bars.dll
+D:\Arteus\Projeler\Ekmekiçi\Arteus Uretim\ArtEtiket\bin\Debug\FastReport.dll
+D:\Arteus\Projeler\Ekmekiçi\Arteus Uretim\ArtEtiket\bin\Debug\FastReport.Editor.dll
+D:\Arteus\Projeler\Ekmekiçi\Arteus Uretim\ArtEtiket\bin\Debug\Microsoft.VisualStudio.Data.dll
+D:\Arteus\Projeler\Ekmekiçi\Arteus Uretim\ArtEtiket\bin\Debug\FastReport.xml
+D:\Arteus\Projeler\Ekmekiçi\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.csprojResolveAssemblyReference.cache
+D:\Arteus\Projeler\Ekmekiçi\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmConnections.resources
+D:\Arteus\Projeler\Ekmekiçi\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmFaturaDetay.resources
+D:\Arteus\Projeler\Ekmekiçi\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmLabel.resources
+D:\Arteus\Projeler\Ekmekiçi\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmMain.resources
+D:\Arteus\Projeler\Ekmekiçi\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmStok.resources
+D:\Arteus\Projeler\Ekmekiçi\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmStokDetay.resources
+D:\Arteus\Projeler\Ekmekiçi\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmParcalama.resources
+D:\Arteus\Projeler\Ekmekiçi\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmUretim.resources
+D:\Arteus\Projeler\Ekmekiçi\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.Properties.Resources.resources
+D:\Arteus\Projeler\Ekmekiçi\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.csproj.GenerateResource.Cache
+C:\Users\Hakan AYDIN\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\bin\Debug\ArtEtiket.exe.config
+C:\Users\Hakan AYDIN\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\bin\Debug\ArtEtiket.exe.manifest
+C:\Users\Hakan AYDIN\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\bin\Debug\ArtEtiket.application
+C:\Users\Hakan AYDIN\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\bin\Debug\ArtEtiket.exe
+C:\Users\Hakan AYDIN\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\bin\Debug\ArtEtiket.pdb
+C:\Users\Hakan AYDIN\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\bin\Debug\Microsoft.VisualStudio.Data.dll
+C:\Users\Hakan AYDIN\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.csprojResolveAssemblyReference.cache
+C:\Users\Hakan AYDIN\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmConnections.resources
+C:\Users\Hakan AYDIN\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmFaturaDetay.resources
+C:\Users\Hakan AYDIN\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmLabel.resources
+C:\Users\Hakan AYDIN\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmMain.resources
+C:\Users\Hakan AYDIN\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmStok.resources
+C:\Users\Hakan AYDIN\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmStokDetay.resources
+C:\Users\Hakan AYDIN\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmParcalama.resources
+C:\Users\Hakan AYDIN\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmUretim.resources
+C:\Users\Hakan AYDIN\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.Properties.Resources.resources
+C:\Users\Hakan AYDIN\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.csproj.GenerateResource.Cache
+C:\Users\Hakan AYDIN\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.exe.manifest
+C:\Users\Hakan AYDIN\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.application
+C:\Users\Hakan AYDIN\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.exe
+C:\Users\Hakan AYDIN\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.pdb
+C:\Users\Teoman\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.csprojResolveAssemblyReference.cache
+C:\Users\Teoman\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\bin\Debug\ArtEtiket.exe.config
+C:\Users\Teoman\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\bin\Debug\ArtEtiket.exe.manifest
+C:\Users\Teoman\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\bin\Debug\ArtEtiket.application
+C:\Users\Teoman\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\bin\Debug\ArtEtiket.exe
+C:\Users\Teoman\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\bin\Debug\ArtEtiket.pdb
+C:\Users\Teoman\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\bin\Debug\Microsoft.VisualStudio.Data.dll
+C:\Users\Teoman\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\bin\Debug\FastReport.xml
+C:\Users\Teoman\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmConnections.resources
+C:\Users\Teoman\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmFaturaDetay.resources
+C:\Users\Teoman\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmLabel.resources
+C:\Users\Teoman\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmMain.resources
+C:\Users\Teoman\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmStok.resources
+C:\Users\Teoman\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmStokDetay.resources
+C:\Users\Teoman\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmParcalama.resources
+C:\Users\Teoman\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmUretim.resources
+C:\Users\Teoman\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.Properties.Resources.resources
+C:\Users\Teoman\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.csproj.GenerateResource.Cache
+C:\Users\Teoman\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.exe.manifest
+C:\Users\Teoman\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.application
+C:\Users\Teoman\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.exe
+C:\Users\Teoman\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.pdb
+D:\Users\Hakan AYDIN\Desktop\SILLL\Arteus Uretim\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmConnections.resources
+D:\Users\Hakan AYDIN\Desktop\SILLL\Arteus Uretim\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmFaturaDetay.resources
+D:\Users\Hakan AYDIN\Desktop\SILLL\Arteus Uretim\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmLabel.resources
+D:\Users\Hakan AYDIN\Desktop\SILLL\Arteus Uretim\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmMain.resources
+D:\Users\Hakan AYDIN\Desktop\SILLL\Arteus Uretim\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmStok.resources
+D:\Users\Hakan AYDIN\Desktop\SILLL\Arteus Uretim\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmStokDetay.resources
+D:\Users\Hakan AYDIN\Desktop\SILLL\Arteus Uretim\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmParcalama.resources
+D:\Users\Hakan AYDIN\Desktop\SILLL\Arteus Uretim\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmUretim.resources
+D:\Users\Hakan AYDIN\Desktop\SILLL\Arteus Uretim\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.Properties.Resources.resources
+D:\Users\Hakan AYDIN\Desktop\SILLL\Arteus Uretim\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.csproj.GenerateResource.Cache
+D:\Users\Hakan AYDIN\Desktop\SILLL\Arteus Uretim\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.exe
+D:\Users\Hakan AYDIN\Desktop\SILLL\Arteus Uretim\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.pdb
+D:\Users\Hakan AYDIN\Desktop\SILLL\Arteus Uretim\Arteus Uretim\ArtEtiket\bin\Debug\ArtEtiket.exe.config
+D:\Users\Hakan AYDIN\Desktop\SILLL\Arteus Uretim\Arteus Uretim\ArtEtiket\bin\Debug\ArtEtiket.exe.manifest
+D:\Users\Hakan AYDIN\Desktop\SILLL\Arteus Uretim\Arteus Uretim\ArtEtiket\bin\Debug\ArtEtiket.application
+D:\Users\Hakan AYDIN\Desktop\SILLL\Arteus Uretim\Arteus Uretim\ArtEtiket\bin\Debug\ArtEtiket.exe
+D:\Users\Hakan AYDIN\Desktop\SILLL\Arteus Uretim\Arteus Uretim\ArtEtiket\bin\Debug\ArtEtiket.pdb
+D:\Users\Hakan AYDIN\Desktop\SILLL\Arteus Uretim\Arteus Uretim\ArtEtiket\bin\Debug\Microsoft.VisualStudio.Data.dll
+D:\Users\Hakan AYDIN\Desktop\SILLL\Arteus Uretim\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.exe.manifest
+D:\Users\Hakan AYDIN\Desktop\SILLL\Arteus Uretim\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.application
+D:\Users\Hakan AYDIN\Desktop\SILLL\Arteus Uretim\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.csprojResolveAssemblyReference.cache
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2015\Projects\Arteus Uretim\ArtEtiket\bin\Debug\ArtEtiket.exe.manifest
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2015\Projects\Arteus Uretim\ArtEtiket\bin\Debug\ArtEtiket.application
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2015\Projects\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.exe.manifest
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2015\Projects\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.application
+D:\Users\Hakan AYDIN\Documents\Visual Studio 2015\Projects\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.csprojResolveAssemblyReference.cache
+C:\Users\Hakan AYDIN\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\bin\Debug\raporlar\Arteus.ico
+C:\Users\Hakan AYDIN\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\bin\Debug\raporlar\Imren.png
+C:\Users\Hakan AYDIN\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\bin\Debug\raporlar\imren.frx
+C:\Users\Hakan AYDIN\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmAdetSecim.resources
+C:\Users\Teoman\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.frmAdetSecim.resources
+C:\Users\Hakan AYDIN\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\bin\Debug\raporlar\imrenRecel.frx
+C:\Users\Hakan AYDIN\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\bin\Debug\raporlar\imrenRecel - Copy.frx
+C:\Users\Hakan AYDIN\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\bin\Debug\raporlar\imrenTatli.frx
+C:\Users\Hakan AYDIN\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\bin\Debug\raporlar\imrenRecel w100 x h53 mm.frx
+C:\Users\Hakan AYDIN\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\bin\Debug\raporlar\imrenTatli w100 x h53 mm.frx
+C:\Users\Hakan AYDIN\Dropbox\00-Arteus Visual Studio Src\Ekmekici\Arteus Uretim\ArtEtiket\obj\x86\Debug\ArtEtiket.Form1.resources
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\obj\x86\Debug\ArtEtiket.Form1.resources
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\obj\x86\Debug\ArtEtiket.frmAdetSecim.resources
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\obj\x86\Debug\ArtEtiket.frmConnections.resources
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\obj\x86\Debug\ArtEtiket.frmFaturaDetay.resources
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\obj\x86\Debug\ArtEtiket.frmLabel.resources
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\obj\x86\Debug\ArtEtiket.frmMain.resources
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\obj\x86\Debug\ArtEtiket.frmStok.resources
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\obj\x86\Debug\ArtEtiket.frmStokDetay.resources
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\obj\x86\Debug\ArtEtiket.frmParcalama.resources
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\obj\x86\Debug\ArtEtiket.frmUretim.resources
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\obj\x86\Debug\ArtEtiket.Properties.Resources.resources
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\obj\x86\Debug\ArtEtiket.csproj.GenerateResource.cache
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\obj\x86\Debug\ArtEtiket.csproj.CoreCompileInputs.cache
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\obj\x86\Debug\ArtEtiket.exe
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\obj\x86\Debug\ArtEtiket.pdb
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\bin\Debug\raporlar\Arteus.ico
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\bin\Debug\raporlar\Imren.png
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\bin\Debug\raporlar\imrenRecel w100 x h53 mm.frx
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\bin\Debug\raporlar\imrenTatli w100 x h53 mm.frx
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\bin\Debug\raporlar\imrenTatli.frx
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\bin\Debug\raporlar\imrenRecel.frx
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\bin\Debug\raporlar\imrenRecel - Copy.frx
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\bin\Debug\raporlar\imren.frx
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\bin\Debug\ArtEtiket.exe.config
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\bin\Debug\ArtEtiket.exe.manifest
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\bin\Debug\ArtEtiket.application
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\bin\Debug\ArtEtiket.exe
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\bin\Debug\ArtEtiket.pdb
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\bin\Debug\FastReport.Compat.dll
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\bin\Debug\FastReport.dll
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\bin\Debug\Microsoft.VisualStudio.Data.dll
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\obj\x86\Debug\ArtEtiket.exe.manifest
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\obj\x86\Debug\ArtEtiket.application
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\obj\x86\Debug\ArtEtiket.csproj.CopyComplete
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\bin\Debug\Newtonsoft.Json.dll
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\bin\Debug\Newtonsoft.Json.xml

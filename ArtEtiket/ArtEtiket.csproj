@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A5C28B11-F54F-4FC5-8839-E8E54C74C563}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ArtEtiket</RootNamespace>
+    <AssemblyName>ArtEtiket</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Arteus.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ArtEtiket.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>E7C76BA2952201599A34135209C464A433BEAE2C</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ArtEtiket_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="FastReport, Version=2020.4.11.0, Culture=neutral, PublicKeyToken=5ceb240df42bf6e8, processorArchitecture=MSIL">
+      <HintPath>..\packages\FastReport.OpenSource.2020.4.11\lib\net40\FastReport.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Bars, Version=2013.1.9.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c" />
+    <Reference Include="FastReport.Compat, Version=2020.3.8.0, Culture=neutral, PublicKeyToken=406e1f4c3c8ef97e, processorArchitecture=MSIL">
+      <HintPath>..\packages\FastReport.Compat.2020.3.8\lib\net40\FastReport.Compat.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Editor, Version=2013.1.9.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c" />
+    <Reference Include="Microsoft.Data.ConnectionUI.Dialog">
+      <HintPath>.\Microsoft.Data.ConnectionUI.Dialog.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Data">
+      <HintPath>.\Microsoft.VisualStudio.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAL\Nodejs.cs" />
+    <Compile Include="DAL\SqlData.cs" />
+    <Compile Include="dbOperation.cs" />
+    <Compile Include="Depofis.cs" />
+    <Compile Include="DepofisIsl.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdetSecim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdetSecim.Designer.cs">
+      <DependentUpon>frmAdetSecim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConnections.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConnections.Designer.cs">
+      <DependentUpon>frmConnections.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFaturaDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFaturaDetay.Designer.cs">
+      <DependentUpon>frmFaturaDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLabel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLabel.Designer.cs">
+      <DependentUpon>frmLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStok.Designer.cs">
+      <DependentUpon>frmStok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStokDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStokDetay.Designer.cs">
+      <DependentUpon>frmStokDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmParcalama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmParcalama.Designer.cs">
+      <DependentUpon>frmParcalama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUretim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUretim.Designer.cs">
+      <DependentUpon>frmUretim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODEL\AdetSecimleri.cs" />
+    <Compile Include="MODEL\UretimTalep.cs" />
+    <Compile Include="MODEL\UretimTalepIsl.cs" />
+    <Compile Include="Parcalama.cs" />
+    <Compile Include="ParcalamaIsl.cs" />
+    <Compile Include="PartiNo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SiraNo.cs" />
+    <Compile Include="SqlConControl.cs" />
+    <Compile Include="SqlProvider.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdetSecim.resx">
+      <DependentUpon>frmAdetSecim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConnections.resx">
+      <DependentUpon>frmConnections.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFaturaDetay.resx">
+      <DependentUpon>frmFaturaDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLabel.resx">
+      <DependentUpon>frmLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStok.resx">
+      <DependentUpon>frmStok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStokDetay.resx">
+      <DependentUpon>frmStokDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmParcalama.resx">
+      <DependentUpon>frmParcalama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUretim.resx">
+      <DependentUpon>frmUretim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ArtEtiket_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="raporlar\imrenRecel w100 x h53 mm.frx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="raporlar\imrenTatli w100 x h53 mm.frx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="raporlar\imrenTatli.frx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="raporlar\imrenRecel.frx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="raporlar\imrenRecel - Copy.frx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="raporlar\imren.frx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\save-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Arteus.ico" />
+    <Content Include="dbScript\01 Create Table PARTI_NO_TERAZI - Copy.sql" />
+    <Content Include="dbScript\02 ALTER TABLE ARTETIKET - Adet ve Dara lar.sql" />
+    <Content Include="dbScript\04 ALTER TABLE PARTI_NO_TERAZI SKT Eklendi.sql" />
+    <Content Include="dbScript\03 ALTER TABLE PARTI_NO_TERAZI Dara Eklendi.sql" />
+    <Content Include="raporlar\Arteus.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="raporlar\Imren.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\imren logo.jpg" />
+    <None Include="Resources\dbOffline.png" />
+    <None Include="Resources\dbOnline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BAL\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\FastReport.Compat.2020.3.8\build\FastReport.Compat.targets" Condition="Exists('..\packages\FastReport.Compat.2020.3.8\build\FastReport.Compat.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Bu proje bu bilgisayarda olmayan NuGet paketlerine başvuru yapıyor. Bunları indirmek için NuGet Paket Geri Yükleme'yi kullanın. Daha fazla bilgi için, bkz. http://go.microsoft.com/fwlink/?LinkID=322105. Eksik dosya: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\FastReport.Compat.2020.3.8\build\FastReport.Compat.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\FastReport.Compat.2020.3.8\build\FastReport.Compat.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

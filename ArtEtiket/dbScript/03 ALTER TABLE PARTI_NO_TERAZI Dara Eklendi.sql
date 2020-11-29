@@ -1,0 +1,6 @@
+﻿ALTER TABLE [dbo].[PARTI_NO_TERAZI] ADD [BURUTMIKTAR] [float] 
+GO
+
+ALTER TABLE [dbo].[PARTI_NO_TERAZI] ADD [DARA] [float] 
+GO
+

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+        <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="ArtEtiket.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false" />
+        </sectionGroup>
+        <sectionGroup name="applicationSettings" type="System.Configuration.ApplicationSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="ArtEtiket.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+        </sectionGroup>
+    </configSections>
+    <connectionStrings />
+    <userSettings>
+        <ArtEtiket.Properties.Settings>
+            <setting name="SqlConStr" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="Label1" serializeAs="String">
+                <value>Stok Kodu</value>
+            </setting>
+            <setting name="Label2" serializeAs="String">
+                <value>Stok Adı</value>
+            </setting>
+            <setting name="Label3" serializeAs="String">
+                <value>İçindekiler</value>
+            </setting>
+            <setting name="Label4" serializeAs="String">
+                <value>Ek4</value>
+            </setting>
+            <setting name="Label5" serializeAs="String">
+                <value>Ek5</value>
+            </setting>
+            <setting name="Label6" serializeAs="String">
+                <value>Ek6</value>
+            </setting>
+            <setting name="Label7" serializeAs="String">
+                <value>Ek7</value>
+            </setting>
+            <setting name="Label8" serializeAs="String">
+                <value>Ek8</value>
+            </setting>
+            <setting name="Label9" serializeAs="String">
+                <value>Ek9</value>
+            </setting>
+            <setting name="Label10" serializeAs="String">
+                <value>Ek10</value>
+            </setting>
+            <setting name="Label11" serializeAs="String">
+                <value>Ek11</value>
+            </setting>
+            <setting name="Label12" serializeAs="String">
+                <value>Ek12</value>
+            </setting>
+            <setting name="Server" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="Login" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="Password" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="Database" serializeAs="String">
+                <value />
+            </setting>
+        </ArtEtiket.Properties.Settings>
+    </userSettings>
+    <applicationSettings>
+        <ArtEtiket.Properties.Settings>
+            <setting name="AlimDepoID" serializeAs="String">
+                <value>1</value>
+            </setting>
+            <setting name="ParcalanacakStokListesi" serializeAs="String">
+                <value>2,404,406,411,416,2822</value>
+            </setting>
+        </ArtEtiket.Properties.Settings>
+    </applicationSettings>
+</configuration>

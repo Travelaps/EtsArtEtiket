@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" TextQuality="Regular" ReportInfo.Created="01/27/2014 16:21:01" ReportInfo.Modified="11/12/2014 17:23:16" ReportInfo.CreatorVersion="2013.1.9.0" PrintSettings.ShowDialog="false">
+  <Dictionary>
+    <TableDataSource Name="dB" ReferenceName="dB" DataType="System.Int32" Enabled="true">
+      <Column Name="ID" DataType="System.Int32"/>
+      <Column Name="TARIH" DataType="System.DateTime"/>
+      <Column Name="ENO" DataType="System.String"/>
+      <Column Name="TUR" DataType="System.String"/>
+      <Column Name="ETIKETTURU" DataType="System.String"/>
+      <Column Name="GDEPO" DataType="System.String"/>
+      <Column Name="CDEPO" DataType="System.String"/>
+      <Column Name="ENO1" DataType="System.String"/>
+      <Column Name="VDNO" DataType="System.String"/>
+      <Column Name="VD" DataType="System.String"/>
+      <Column Name="ADRES1" DataType="System.String"/>
+      <Column Name="ADRES2" DataType="System.String"/>
+      <Column Name="ADRES3" DataType="System.String"/>
+      <Column Name="URETIMID" DataType="System.Int32"/>
+      <Column Name="URETIMTURU" DataType="System.String"/>
+      <Column Name="YAZ" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="HAREKETISLID" DataType="System.Int32"/>
+      <Column Name="BIRIM" DataType="System.String"/>
+      <Column Name="SKTARIHI" DataType="System.DateTime"/>
+      <Column Name="ADI" DataType="System.String"/>
+      <Column Name="KOPYASAYISI" DataType="System.Int32"/>
+      <Column Name="MIKTAR" DataType="System.Double"/>
+      <Column Name="PARTINO" DataType="System.String"/>
+      <Column Name="ACIKLAMA" DataType="System.String"/>
+      <Column Name="ICINDEKILER" DataType="System.String"/>
+      <Column Name="EK2" DataType="System.String"/>
+      <Column Name="EK3" DataType="System.String"/>
+      <Column Name="EK4" DataType="System.String"/>
+      <Column Name="NETAGIRLIK" DataType="System.String"/>
+      <Column Name="NOT" DataType="System.String"/>
+    </TableDataSource>
+  </Dictionary>
+  <ReportPage Name="Page1" PaperWidth="214" PaperHeight="203">
+    <PageHeaderBand Name="PageHeader1" Width="733.32" Height="321.3">
+      <TextObject Name="Text3" Left="585.9" Top="198.45" Width="122.85" Height="47.25" Text="[dB.TARIH]&#13;&#10;&#13;&#10;[dB.TARIH]" Format="Date" Format.Format="d" VertAlign="Center"/>
+      <TextObject Name="Text5" Left="9.45" Top="160.65" Width="283.5" Height="75.6" Text="[dB.GDEPO]"/>
+    </PageHeaderBand>
+    <DataBand Name="Data1" Top="325.3" Width="733.32" Height="18.9" DataSource="dB">
+      <TextObject Name="Text2" Left="410.13" Width="94.5" Height="18.9" Text="[dB.MIKTAR]" HorzAlign="Right" VertAlign="Center"/>
+      <TextObject Name="Text1" Left="114.9" Width="292.95" Height="18.9" Text="[dB.ADI]" VertAlign="Center"/>
+      <TextObject Name="Text7" Left="18.9" Width="94.5" Height="18.9" Text="[dB.PARTINO]" VertAlign="Center"/>
+      <TextObject Name="Text8" Left="510.3" Width="94.5" Height="18.9" Text="[dB.BIRIM]" VertAlign="Center"/>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="348.2" Width="733.32" Height="18.9"/>
+  </ReportPage>
+</Report>

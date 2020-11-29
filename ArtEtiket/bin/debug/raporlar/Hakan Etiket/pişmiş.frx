@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="12/30/2013 12:45:17" ReportInfo.Modified="11/24/2014 13:52:33" ReportInfo.CreatorVersion="2013.1.9.0">
+  <Dictionary>
+    <TableDataSource Name="dB" ReferenceName="dB" DataType="System.Int32" Enabled="true">
+      <Column Name="ID" DataType="System.Int32"/>
+      <Column Name="TARIH" DataType="System.DateTime"/>
+      <Column Name="TUR" DataType="System.String"/>
+      <Column Name="CDEPO" DataType="System.String"/>
+      <Column Name="GDEPO" DataType="System.String"/>
+      <Column Name="ADRES1" DataType="System.String"/>
+      <Column Name="ADRES2" DataType="System.String"/>
+      <Column Name="ADRES3" DataType="System.String"/>
+      <Column Name="VD" DataType="System.String"/>
+      <Column Name="VDNO" DataType="System.String"/>
+      <Column Name="ENO" DataType="System.String"/>
+      <Column Name="URETIMTURU" DataType="System.String"/>
+      <Column Name="YAZ" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="HAREKETISLID" DataType="System.Int32"/>
+      <Column Name="BIRIM" DataType="System.String"/>
+      <Column Name="SKTARIHI" DataType="System.DateTime"/>
+      <Column Name="ADI" DataType="System.String"/>
+      <Column Name="KOPYASAYISI" DataType="System.Int32"/>
+      <Column Name="MIKTAR" DataType="System.Double"/>
+      <Column Name="PARTINO" DataType="System.String"/>
+      <Column Name="ACIKLAMA" DataType="System.String"/>
+      <Column Name="ICINDEKILER" DataType="System.String"/>
+      <Column Name="EK2" DataType="System.String"/>
+      <Column Name="EK3" DataType="System.String"/>
+      <Column Name="EK4" DataType="System.String"/>
+      <Column Name="NETAGIRLIK" DataType="System.String"/>
+      <Column Name="NOT" DataType="System.String"/>
+      <Column Name="ETIKETTURU" DataType="System.String"/>
+      <Column Name="URETIMID" DataType="System.Int32"/>
+    </TableDataSource>
+  </Dictionary>
+  <ReportPage Name="Page1" PaperWidth="100" PaperHeight="70" LeftMargin="0" TopMargin="0" RightMargin="0" BottomMargin="0" FirstPageSource="256" OtherPagesSource="256">
+    <ReportTitleBand Name="ReportTitle1" Width="378" Height="264.6">
+      <TextObject Name="Text2" Left="3.78" Width="37.8" Height="170.1" CanBreak="false" Text="ÇAĞDAŞ DÖNER&#13;&#10;" Angle="270" WordWrap="false" Font="Tahoma, 10pt, style=Bold"/>
+      <TextObject Name="Text4" Left="52.7" Top="28.35" Width="22.68" Height="141.75" Text="MENŞEİ ÜLKE : TÜRKİYE" VertAlign="Bottom" Angle="270" Font="Tahoma, 7pt"/>
+      <TextObject Name="Text8" Left="150.98" Top="9.45" Width="34.02" Height="245.7" Text="İÇİNDEKİLER : [dB.ICINDEKILER]" Angle="270" Font="Tahoma, 7pt"/>
+      <TextObject Name="Text9" Left="240.03" Top="170.1" Width="18.9" Height="85.05" Text="ÜRT.TRH" VertAlign="Center" Angle="270" Font="Tahoma, 9pt"/>
+      <TextObject Name="Text10" Left="258.93" Top="170.1" Width="18.9" Height="85.05" Text="SON K.TRH" VertAlign="Center" Angle="270" Font="Tahoma, 9pt"/>
+      <TextObject Name="Text11" Left="283.5" Top="217.35" Width="22.68" Height="37.8" Text="NET" VertAlign="Center" Angle="270" Font="Tahoma, 10pt"/>
+      <TextObject Name="Text14" Left="94.5" Top="9.45" Width="26.46" Height="245.7" Text="[dB.ADI]" Angle="270" WordWrap="false" Font="Tahoma, 14.5pt"/>
+      <TextObject Name="Text15" Left="240.03" Top="47.25" Width="18.9" Height="113.4" Text="[dB.TARIH]" Format="Date" Format.Format="d" VertAlign="Center" Angle="270" Font="Tahoma, 9pt"/>
+      <TextObject Name="Text16" Left="258.93" Top="47.25" Width="18.9" Height="113.4" Text="[dB.SKTARIHI]" Format="Custom" Format.Format="dd.MM.yyyy" VertAlign="Center" Angle="270" Font="Tahoma, 9pt"/>
+      <TextObject Name="Text17" Left="283.5" Top="55.25" Width="22.68" Height="151.2" Text="[dB.MIKTAR] [dB.BIRIM]" VertAlign="Center" Angle="270" Font="Tahoma, 10pt"/>
+      <TextObject Name="Text19" Left="41.8" Width="15.12" Height="170.1" CanBreak="false" Text="1203 Sk. No:20 20/B Sarnıç / İZMİR" VertAlign="Bottom" Angle="270" WordWrap="false" Font="Tahoma, 7pt"/>
+      <TextObject Name="Text20" Left="240.03" Top="160.65" Width="18.9" Height="9.45" Text=":" Format="Date" Format.Format="d" VertAlign="Center" Angle="270" Font="Tahoma, 9pt"/>
+      <TextObject Name="Text21" Left="258.93" Top="160.65" Width="18.9" Height="9.45" Text=":" Format="Date" Format.Format="d" VertAlign="Center" Angle="270" Font="Tahoma, 9pt"/>
+      <TextObject Name="Text22" Left="283.5" Top="206.9" Width="22.68" Height="9.45" Text=":" VertAlign="Center" Angle="270" Font="Tahoma, 10pt"/>
+      <TextObject Name="Text3" Left="307.4" Width="66.15" Height="18.9" Text="Parti No :" VertAlign="Center" Angle="180" Font="Tahoma, 8pt, style=Bold"/>
+      <ShapeObject Name="Shape1" Left="37.8" Top="179.55" Width="37.8" Height="75.6" Shape="Ellipse"/>
+      <TextObject Name="Text1" Left="44.25" Top="178.55" Width="18.9" Height="75.6" Text="İşletme Onay No" HorzAlign="Center" Angle="270" Font="Arial, 6pt, style=Bold"/>
+      <TextObject Name="Text26" Left="343.1" Top="56.7" Width="30.24" Height="198.45" Text="[dB.EK2]" VertAlign="Bottom" Angle="270" Font="Tahoma, 7pt"/>
+      <TextObject Name="Text27" Left="195.9" Top="47.25" Width="39.69" Height="207.9" Text="[dB.EK3]" Angle="270" WordWrap="false" Font="Tahoma, 7pt"/>
+      <TextObject Name="Text28" Left="56.7" Top="179.55" Width="18.9" Height="75.6" Text="35 - 0425" HorzAlign="Center" Angle="270" Font="Arial, 7pt, style=Bold"/>
+      <BarcodeObject Name="Barcode1" Left="184.55" Width="189" Height="47.25" Angle="180" AutoSize="false" DataColumn="dB.PARTINO" Barcode.CalcCheckSum="false"/>
+      <TextObject Name="Text29" Left="307.85" Top="56.7" Width="39.69" Height="198.45" Text="Ürünü buzdolabında çözünüz. Çözülen ürünü tekrar dondurmayınız." Angle="270" Font="Tahoma, 7pt"/>
+      <TextObject Name="Text30" Left="122.85" Top="9.45" Width="26.46" Height="245.7" Text="[dB.EK4]" Angle="270" WordWrap="false" Font="Tahoma, 10pt, style=Bold"/>
+    </ReportTitleBand>
+  </ReportPage>
+</Report>

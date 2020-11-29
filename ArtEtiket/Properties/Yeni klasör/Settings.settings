@@ -1,0 +1,90 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ArtEtiket.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SqlConStr" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Ek1Aciklama" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Stok Kodu</Value>
+    </Setting>
+    <Setting Name="Ek2Aciklama" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Stok Adı</Value>
+    </Setting>
+    <Setting Name="Ek3Aciklama" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">İçindekiler</Value>
+    </Setting>
+    <Setting Name="Ek4Aciklama" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Ek4</Value>
+    </Setting>
+    <Setting Name="Ek5Aciklama" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Ek5</Value>
+    </Setting>
+    <Setting Name="Ek6Aciklama" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Ek6</Value>
+    </Setting>
+    <Setting Name="Ek7Aciklama" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Ek7</Value>
+    </Setting>
+    <Setting Name="Ek8Aciklama" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Ek8</Value>
+    </Setting>
+    <Setting Name="Ek9Aciklama" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Ek9</Value>
+    </Setting>
+    <Setting Name="Ek10Aciklama" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Ek10</Value>
+    </Setting>
+    <Setting Name="Serversil" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">192.168.1.201</Value>
+    </Setting>
+    <Setting Name="Login" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">sa</Value>
+    </Setting>
+    <Setting Name="Password" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">01012000</Value>
+    </Setting>
+    <Setting Name="Database" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">EKMEKICI_ETS</Value>
+    </Setting>
+    <Setting Name="AlimDepoID" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="ParcalanacakStokListesi" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">2,404,406,411,416,2822</Value>
+    </Setting>
+    <Setting Name="ComPort" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">COM1</Value>
+    </Setting>
+    <Setting Name="ComPort_BaudRate" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">9600</Value>
+    </Setting>
+    <Setting Name="TeraziBilgiAlmaSuresi_msec" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">500</Value>
+    </Setting>
+    <Setting Name="TeraziBilgiAlmaSuresi2_msec" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">50</Value>
+    </Setting>
+    <Setting Name="TeraziBilgiIncelemeAktif" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="TeraziModel" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">30KG</Value>
+    </Setting>
+    <Setting Name="StokButonYukseklik" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">70</Value>
+    </Setting>
+    <Setting Name="StokButonGenislik" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">140</Value>
+    </Setting>
+    <Setting Name="BarkodPrinterName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">BARKOD</Value>
+    </Setting>
+    <Setting Name="StokAdiAciklama" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Stok Adı</Value>
+    </Setting>
+    <Setting Name="StokKoduAciklama" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Stok Kodu</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
