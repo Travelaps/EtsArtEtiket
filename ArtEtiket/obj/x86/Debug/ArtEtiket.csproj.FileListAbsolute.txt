@@ -199,3 +199,41 @@ C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA
 C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\obj\x86\Debug\ArtEtiket.csproj.CopyComplete
 C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\bin\Debug\Newtonsoft.Json.dll
 C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\bin\Debug\Newtonsoft.Json.xml
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\bin\Debug\raporlar\Arteus.ico
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\bin\Debug\raporlar\Imren.png
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\bin\Debug\raporlar\imrenRecel w100 x h53 mm.frx
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\bin\Debug\raporlar\imrenTatli w100 x h53 mm.frx
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\bin\Debug\raporlar\imrenTatli.frx
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\bin\Debug\raporlar\imrenRecel.frx
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\bin\Debug\raporlar\imrenRecel - Copy.frx
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\bin\Debug\raporlar\imren.frx
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\bin\Debug\ArtEtiket.exe.config
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\bin\Debug\ArtEtiket.exe.manifest
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\bin\Debug\ArtEtiket.application
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\bin\Debug\ArtEtiket.exe
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\bin\Debug\ArtEtiket.pdb
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\bin\Debug\FastReport.Compat.dll
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\bin\Debug\FastReport.dll
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\bin\Debug\Microsoft.VisualStudio.Data.dll
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\bin\Debug\Newtonsoft.Json.dll
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\bin\Debug\Newtonsoft.Json.xml
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.Form1.resources
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.frmAdetSecim.resources
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.frmConnections.resources
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.frmFaturaDetay.resources
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.frmLabel.resources
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.frmMain.resources
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.frmStok.resources
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.frmStokDetay.resources
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.frmParcalama.resources
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.frmUretim.resources
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.Properties.Resources.resources
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.csproj.GenerateResource.cache
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.csproj.CoreCompileInputs.cache
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.exe.manifest
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.application
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.csproj.CopyComplete
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.exe
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.pdb
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\bin\Debug\FastReport.Bars.dll
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\bin\Debug\FastReport.Editor.dll

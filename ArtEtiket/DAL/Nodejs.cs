@@ -32,6 +32,12 @@ namespace ArtEtiket.DAL
 
             if (ActionType == "Select")
             {
+                if (!data.Contains("{") || !data.Contains("}"))
+                {
+                    System.Windows.Forms.MessageBox.Show(data.ToString(), "ElektraWeb", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+                    throw null;
+                   
+                }
                 JArray dataSets = new JArray();
                 dataSets = (JArray)JObject.Parse(data)["ResultSets"];
 
@@ -39,9 +45,14 @@ namespace ArtEtiket.DAL
             }
             else if (ActionType=="Execute")
             {
+                if (!data.Contains("]") || !data.Contains("["))
+                {
+                    System.Windows.Forms.MessageBox.Show(data.ToString(),"ElektraWeb",System.Windows.Forms.MessageBoxButtons.OK,System.Windows.Forms.MessageBoxIcon.Error);
+                    throw null;
+                }
                 JArray dataSets = new JArray();
                 dataSets = JArray.Parse(data);
-               var _obj = JArray.Parse(data);  
+                var _obj = JArray.Parse(data);  
                 datasource["datatable1"] = _obj[0]; //JObject.Parse(data)[0];
             }
 

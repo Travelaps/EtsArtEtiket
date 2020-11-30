@@ -89,6 +89,7 @@
             this.rtbLOG.Size = new System.Drawing.Size(356, 202);
             this.rtbLOG.TabIndex = 0;
             this.rtbLOG.Text = "";
+            this.rtbLOG.TextChanged += new System.EventHandler(this.rtbLOG_TextChanged);
             // 
             // boxLeftPart
             // 
@@ -347,9 +348,9 @@
             // 
             // report1
             // 
-            this.report1.NeedRefresh = false;
+            //this.report1.NeedRefresh = false; kapattım
             this.report1.ReportResourceString = resources.GetString("report1.ReportResourceString");
-            this.report1.Tag = null;
+            //this.report1.Tag = null;kapattım
             // 
             // timer1
             // 

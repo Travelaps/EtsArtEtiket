@@ -323,6 +323,18 @@ namespace ArtEtiket
         private int UretimTalepDepoId = 0;
         private bool UretimTalebiniOtomatikOlustur = false;
 
+        public void MenuRefresh()
+        {
+            string ilkgrup = null;
+            if (pnlMamulGruplari.Visible)
+                ilkgrup = MamulGrupButonlariniCiz();
+
+            MamulButonlariniCiz(0, ilkgrup);
+
+            if (pnlSubeler.Visible)
+                SubeButonlariniCiz();
+        }
+
         private void frmUretim_Load(object sender, EventArgs e)
         {
             string ilkgrup = null;
@@ -371,6 +383,9 @@ namespace ArtEtiket
         public string MamulGrupButonlariniCiz()
         {
             var ilkgrup = "";
+            //string BtnTag = "GROUPCODE", btnText = "GROUPNAME";
+            string BtnTag = "ID", btnText = "NOTES";
+
             pnlMamulGruplari.Height = (StokGrupSatirSayisi * StokGrupButonYukseklik) + 10;
 
         #region 1.adım >> MAMUL GRUPLARI Alt Panelde Butonlar Halinde Göster
@@ -384,11 +399,12 @@ namespace ArtEtiket
 
             api.Login();
 
-            var dataset  = api.GetDataSet(this.GetStockGroup());
+            var dataset  = api.GetDataSet(/*this.GetStockGroup()*/ this.GetProductionFiches());
+            
 
             System.Data.DataTable StockGroupDTable = dataset.Tables["datatable1"];
 
-             
+            
             #region Nodejs
             /*_sqlProvider = new SqlProvider(
                " SELECT STOKGRUPID,KODU,ADI " +
@@ -407,16 +423,16 @@ namespace ArtEtiket
             foreach (DataRow row in dt.Rows)
             {
                 if (ilkgrup == "")
-                    ilkgrup = row["GROUPCODE"].ToString();//row["KODU"].ToString();
+                    ilkgrup = row[BtnTag].ToString();//row["KODU"].ToString();
 
                 var btn = new Button
                 {
                     Height = StokGrupButonYukseklik ,
                     Width =  StokGrupButonGenislik,
-                    Tag = row["GROUPCODE"],//row["KODU"],
-                    Text = row["GROUPNAME"].ToString(),//row["GROUPNAME"].ToString(),
+                    Tag = row[BtnTag],//row["KODU"],
+                    Text = row[btnText].ToString(),//row["GROUPNAME"].ToString(),
 
-                    BackColor =
+                    /*BackColor =
 
                     (
 
@@ -441,7 +457,7 @@ namespace ArtEtiket
                     row["GROUPNAME"].ToString().Contains("DANA") ? Color.HotPink :
 
                     Color.White
-                                  )
+                                  )*/
                 };
                  btn.Click += new EventHandler(btn_MamulGrupClick);
                  pnlMamulGruplari.Controls.Add(btn);
@@ -449,13 +465,13 @@ namespace ArtEtiket
             return ilkgrup;
             #endregion
         }
-
+         
         public JObject GetStockGroup()
         {
             JObject obj = new JObject();
             obj["Action"] = "Select";
        
-            obj["Object"] = "QA_STOCK_SEMIPRODUCT_GROUPS";
+            obj["Object"] = "QA_STOCK_SEMIPRODUCT_GROUPS";// 
             obj["LoginToken"] = api.LoginToken;
             //MessageBox.Show(api.LoginToken);
            /* var where = new JArray();
@@ -469,6 +485,56 @@ namespace ArtEtiket
 
             return obj;
         }
+        public JObject GetProductionFiches() 
+        {
+            JObject obj = new JObject();
+            obj["Action"] = "Select";
+
+            obj["Object"] = "QA_STOCK_PRODUCTIONFICHES_NOT_COMPLETE";//  
+            obj["LoginToken"] = api.LoginToken;
+            //MessageBox.Show(api.LoginToken);
+            /* var where = new JArray();
+             obj["Where"] = where;
+
+             var where1 = new JObject();
+             where1["Column"] = "STOCKTYPE";
+             where1["Operator"] = "=";
+             where1["Value"] = "1";
+             where.Add(where1);*/
+
+            return obj;
+        }
+        public JObject GetProductionFichesDetails(string FicheId =null)
+        {
+            JObject obj = new JObject();
+            obj["Action"] = "Select";
+            obj["Object"] = "QA_STOCK_PRODUCTIONFICHEDETAILS_NOT_COMPLETE";
+            obj["LoginToken"] = api.LoginToken;
+
+            var where = new JArray();
+            obj["Where"] = where;
+
+           /* var where1 = new JObject();
+            where1["Column"] = "STOCKTYPE";
+            where1["Operator"] = "=";
+            where1["Value"] = "1";*/
+
+            var where2 = new JObject();
+
+            if (FicheId != null)
+            {
+                where2["Column"] = "FICHEID";
+                where2["Operator"] = "=";
+                where2["Value"] = FicheId;
+                where.Add(where2);
+            }
+            //where.Add(where1);
+
+            return obj;
+        }
+
+
+
         public JObject GetProduct(JObject Where = null)
         {
             JObject obj = new JObject();
@@ -511,8 +577,9 @@ namespace ArtEtiket
               + ( (grupkodu != null) ? " AND GRUP = '"+grupkodu+"' " : "" )
               + "ORDER BY ADI"
               );*/
-
-            var dataset = api.GetDataSet(GetStock(grupkodu));
+           
+           //  var dataset = api.GetDataSet(GetStock(grupkodu));
+            var dataset = api.GetDataSet(GetProductionFichesDetails(grupkodu));
 
             System.Data.DataTable StockDTable = dataset.Tables["datatable1"];
 
@@ -558,7 +625,7 @@ namespace ArtEtiket
                     + row["NAME"].ToString() 
                     + ((row["UNITNAME"].ToString() == "ADET") ? "\n" + "(ADET)" : ""),
 
-                    BackColor =
+                    /*BackColor =
 
                     (
                     //EKMEKICI
@@ -584,7 +651,7 @@ namespace ArtEtiket
                     row["GROUPNAME"].ToString().Contains("POĞAÇA") ? Color.LightCoral :
 
                     Color.White
-                                  )
+                                  )*/
                 };
                 btn.Click += new EventHandler(btn_MamulClick);
                 btn.Font  = new Font(btn.Font.FontFamily, FontSize);
@@ -687,7 +754,7 @@ namespace ArtEtiket
                         }
                     }
                 }
-
+                //buraası
                 if (!islemIptal)
                 {
                     #region if (KoliAktif)
@@ -868,7 +935,7 @@ namespace ArtEtiket
                     ///double GROSSQUANTITY = Convert.ToDouble(dt.Rows[0]["GROSSQUANTITY"].ToString());
                      
 
-                    PartiNoInsert(partino,stokid,miktar,uretimtarihi, uretimtarihi, 0, daramiktar,sktarihi,DateTime.Now);//dbOperation.PartiNoOlusumuKaydet(partino, stokid, miktar, daramiktar, uretimtarihi, sktarihi, koliicinde, koligrupid);
+                    PartiNoInsert(partino,stokid,miktar,uretimtarihi, uretimtarihi, daramiktar+miktar, daramiktar, DateTime.Now, sktarihi);//dbOperation.PartiNoOlusumuKaydet(partino, stokid, miktar, daramiktar, uretimtarihi, sktarihi, koliicinde, koligrupid);
 
 
                     if (UretimTalebiniOtomatikOlustur)
@@ -881,17 +948,18 @@ namespace ArtEtiket
                     frxDosyaAdi = VarsayilanEtiket;
 
                 report1.Load(AppDomain.CurrentDomain.BaseDirectory + "\\Raporlar\\" +
-                              frxDosyaAdi + ".frx");
+                               frxDosyaAdi.Replace(".frx","") + ".frx");
 
                 report1.RegisterData(dt, "Etiket");
                 report1.GetDataSource("Etiket").Enabled = true;
 
                 if (Onizleme)
                 {
-                    /*report1.PrintSettings.Copies = 1;
+                    report1.PrintSettings.Copies = 1;
+                    
                     report1.PrintSettings.ShowDialog = true;
                     //report1.PrintSettings.Printer = dsRow["Printer"].ToString();
-                    report1.Show();*/
+                    report1.Show();
                 }
                 else
                 {
@@ -935,7 +1003,8 @@ namespace ArtEtiket
             var Parameters = new JObject();
 
             Parameters["LOTNO"] = LOTNO.ToString();
-            Parameters["STOCKID"] = STOCKID.ToString();
+            //Parameters["STOCKID"] = STOCKID.ToString();
+            Parameters["STOCKFICHEDETAILID"] = STOCKID.ToString();
             Parameters["QUANTITY"] = QUANTITY.ToString();
             Parameters["TDATE"] = TDATE.ToString("yyyy-MM-dd HH:mm:ss");
             Parameters["TTIME"] = TTIME.ToString("HH:mm:ss");
@@ -972,7 +1041,7 @@ namespace ArtEtiket
            
 
             //var Parameters1 = new JObject();
-            Parameters["STOKID"] = stokid.ToString();
+            Parameters["STOCKFICHEDETAILID"] = stokid.ToString();
             Parameters["MIKTAR"] = miktar.ToString();
             Parameters["DARA"] = daramiktar.ToString();
             Parameters["PARTINO"] = partino.ToString();
@@ -1103,5 +1172,10 @@ namespace ArtEtiket
 
         }
         #endregion
+
+        private void rtbLOG_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

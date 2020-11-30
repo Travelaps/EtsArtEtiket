@@ -43,26 +43,38 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ArtEtiket.exe" size="187392">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ArtEtiket.exe" size="186368">
       <assemblyIdentity name="ArtEtiket" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>c8nZulWp256uJVmItHiK2jdRCtU=</dsig:DigestValue>
+        <dsig:DigestValue>opnXKLSQkzTc1oTGzKYcRrIyuRg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FastReport.dll" size="2918912">
-      <assemblyIdentity name="FastReport" version="2020.4.11.0" publicKeyToken="5CEB240DF42BF6E8" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FastReport.dll" size="2950144">
+      <assemblyIdentity name="FastReport" version="2013.1.9.0" publicKeyToken="DB7E5CE63278458C" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>atJ9kXp4B/UOgj0PWs1yviTprkc=</dsig:DigestValue>
+        <dsig:DigestValue>D1KP1sC0axIeq9ri/cfCOAjBqJY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FastReport.Bars.dll" size="3264000">
+      <assemblyIdentity name="FastReport.Bars" version="2013.1.9.0" publicKeyToken="DB7E5CE63278458C" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>f4Y9aw9/3xKhBayiRGRuniS8DF4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -75,6 +87,18 @@
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
         <dsig:DigestValue>ASW75b39gabwoAH5VsaGFKA64TM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FastReport.Editor.dll" size="1001984">
+      <assemblyIdentity name="FastReport.Editor" version="2013.1.9.0" publicKeyToken="DB7E5CE63278458C" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>TQ4eZ7bxqgsJI/Veoy7H/jKvHGw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
