@@ -237,3 +237,4 @@ C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\obj\
 C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.pdb
 C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\bin\Debug\FastReport.Bars.dll
 C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\bin\Debug\FastReport.Editor.dll
+C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.csprojAssemblyReference.cache

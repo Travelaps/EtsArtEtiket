@@ -143,7 +143,7 @@ namespace ArtEtiket.DAL
 
         public bool Login()
         {
-            var loginResp = post(@"{ ""Action"":""Login"", ""Tenant"":""18892"", ""Usercode"":""demo"", ""Password"":""123""}");
+            var loginResp = post(@"{ ""Action"":""Login"", ""Tenant"":""16534"", ""Usercode"":""ENTEGRASYON"", ""Password"":""123456aA.""}");
             var Success = (bool)JObject.Parse(loginResp)["Success"];
             string token = "";
             if (Success == true)
