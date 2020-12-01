@@ -66,7 +66,7 @@ namespace ArtEtiket
             api = new Nodejs();
             serialPort1.PortName = _comPort;
             serialPort1.BaudRate = _comPortBaudRate;
-            //kapattım OpenPort();
+            OpenPort();
 
             timer1.Interval = _timer1Sure;
             timer2.Interval = _timer2Sure;
@@ -101,8 +101,8 @@ namespace ArtEtiket
                 serialPort1.Open();
                 if (serialPort1.IsOpen)
                 {
-                    /*timer1.Enabled = true;
-                    timer2.Enabled = true;*/
+                    timer1.Enabled = true;
+                    timer2.Enabled = true;
                     okunan_LOG.Add("Seri port opened");
                 }
             }
@@ -137,15 +137,16 @@ namespace ArtEtiket
 
         private void Timer2Tick(object sender, EventArgs e)
         {
-           /* if (serialPort1.BytesToRead > 0)
+             
+            if (serialPort1.BytesToRead > 0)
             {
                 rtbOkunan.Text += serialPort1.ReadExisting();
-            }*/
+            }
         }
         private void Timer1Tick(object sender, EventArgs e)
         {
             //okunanStrArray = okunanStr.Split((char)10);
-            return;
+         
             okunan_LOG.Add("Timer ticked" + (char)13);
             timer1.Enabled = false;
             timer2.Enabled = false;
@@ -941,6 +942,10 @@ namespace ArtEtiket
                     if (UretimTalebiniOtomatikOlustur)
                         dbOperation.UretimTalebiniOlustur(partino, stokid, birim, miktar, uretimtarihi, UretimTalepDepoId);
                 }
+
+                if (report1 == null)
+                    report1 = new FastReport.Report();
+
                 report1.Refresh();
 
                 string frxDosyaAdi = dt.Rows[0]["EK3"].ToString().ToLower();
@@ -1090,6 +1095,10 @@ namespace ArtEtiket
             }
             else
             {
+                while (pNo.Length<10)
+                {
+                    pNo = pNo.Insert(0, "0");
+                }
                 int parti = Convert.ToInt32(pNo.Substring(6, 4)) + 1;
                 partiNo = string.Format("{0:ddMMyy}{1}", dt, parti);
                 //PartiNoInsert(partiNo, tarih, tableName);
@@ -1180,7 +1189,7 @@ namespace ArtEtiket
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
-            MenuRefresh();
+            MenuRefresh(); 
         }
     }
 }
