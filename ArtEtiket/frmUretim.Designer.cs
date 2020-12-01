@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUretim));
             this.pnlMamuller = new System.Windows.Forms.FlowLayoutPanel();
             this.rtbLOG = new System.Windows.Forms.RichTextBox();
             this.boxLeftPart = new System.Windows.Forms.GroupBox();
@@ -53,10 +52,11 @@
             this.txtTekrarBarkod = new System.Windows.Forms.TextBox();
             this.btnTekrarEtiketBasmakIcinBarkodOkut = new System.Windows.Forms.Button();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.report1 = new FastReport.Report();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnRefresh = new System.Windows.Forms.Button();
             this.pnlMamuller.SuspendLayout();
             this.boxLeftPart.SuspendLayout();
             this.boxMiktar.SuspendLayout();
@@ -69,7 +69,7 @@
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.report1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlMamuller
@@ -182,6 +182,7 @@
             // 
             this.pnlEtiketler.Controls.Add(this.pnlKoliIslem);
             this.pnlEtiketler.Controls.Add(this.pnlTekrarEtiketBas);
+            this.pnlEtiketler.Controls.Add(this.panel1);
             this.pnlEtiketler.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlEtiketler.Location = new System.Drawing.Point(3, 16);
             this.pnlEtiketler.Margin = new System.Windows.Forms.Padding(5);
@@ -346,12 +347,6 @@
             this.splitContainer1.SplitterDistance = 682;
             this.splitContainer1.TabIndex = 7;
             // 
-            // report1
-            // 
-            //this.report1.NeedRefresh = false; kapattım
-            this.report1.ReportResourceString = resources.GetString("report1.ReportResourceString");
-            //this.report1.Tag = null;kapattım
-            // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.Timer1Tick);
@@ -359,6 +354,27 @@
             // timer2
             // 
             this.timer2.Tick += new System.EventHandler(this.Timer2Tick);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnRefresh);
+            this.panel1.Location = new System.Drawing.Point(8, 409);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(296, 66);
+            this.panel1.TabIndex = 6;
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.Color.MediumBlue;
+            this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnRefresh.ForeColor = System.Drawing.Color.White;
+            this.btnRefresh.Location = new System.Drawing.Point(2, 8);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(293, 51);
+            this.btnRefresh.TabIndex = 8;
+            this.btnRefresh.Text = "Üretim Emirlerini Oku";
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // frmUretim
             // 
@@ -390,7 +406,7 @@
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.report1)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -424,5 +440,7 @@
         private System.Windows.Forms.TextBox txtTekrarBarkod;
         private System.Windows.Forms.Button btnTekrarEtiketBasmakIcinBarkodOkut;
         private System.Windows.Forms.FlowLayoutPanel pnlMamulGruplari;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnRefresh;
     }
 }
