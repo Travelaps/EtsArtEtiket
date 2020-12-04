@@ -94,6 +94,7 @@ namespace ArtEtiket
 
         public void OpenPort()
         {
+       
             rtbOkunan.Clear();
             okunan_LOG.Clear();
             try
@@ -624,7 +625,7 @@ namespace ArtEtiket
                     Text = 
                     ((StokKodunuGoster) ? row["STOCKCODE"].ToString() + "\n" : "")
                     + row["NAME"].ToString() 
-                    + ((row["UNITNAME"].ToString() == "ADET") ? "\n" + "(ADET)" : ""),
+                    + ((row["UNITNAME"].ToString() == "ADET" || row["UNITNAME"].ToString() == "KG" || row["UNITNAME"].ToString() == "LT" ) ? "\n" + "("+ row["UNITNAME"].ToString() + ")" : ""),
 
                     /*BackColor =
 
@@ -733,7 +734,7 @@ namespace ArtEtiket
                 else
                 {
                     miktar = Convert.ToDouble(txtMiktar.Text);
-                    var list = Uretim_AdetSecimAlternatifleri(stokid,"DARA");
+                    var list = Uretim_AdetSecimAlternatifleri(stokid,"TARE");
                     if (list.Count > 0)
                     {
                         if (list.Count == 1)
@@ -797,7 +798,7 @@ namespace ArtEtiket
            
 
             var dt = new DataTable();
-           var dataset =  api.GetDataSet(Get_SCALEANDLABELDETAILS(stokid.ToString()));
+            var dataset =  api.GetDataSet(Get_SCALEANDLABELDETAILS2(stokid.ToString()),"Execute");
             System.Data.DataTable dTable = dataset.Tables["datatable1"];
             dt = dTable;
             //dt.Load(_sqlProvider.ExecuteReader());
@@ -812,9 +813,9 @@ namespace ArtEtiket
                         if (dt.Rows[0][alanadi + i.ToString()].ToString() != "0")
                         {
                             MODEL.AdetSecimleri a = new MODEL.AdetSecimleri();
-                            a.Aciklama = (((dt.Rows[0]["UNITNAME"].ToString().ToUpper() == "LT") && (alanadi == "ADET")) ? "Kap" : "Tepsi") + " No " + i.ToString();
+                            a.Aciklama = (((dt.Rows[0]["UNITNAME"].ToString().ToUpper() == "LT") && (alanadi == "QUANTITY")) ? "Kap" : "Tepsi") + " No " + i.ToString();
                             a.Adet = Convert.ToInt32(dt.Rows[0][alanadi + i.ToString()].ToString());
-                            a.Tur = ((dt.Rows[0]["UNITNAME"].ToString().ToUpper() == "LT") && (alanadi == "ADET")) ? "LT" : alanadi;
+                            a.Tur = ((dt.Rows[0]["UNITNAME"].ToString().ToUpper() == "LT") && (alanadi == "QUANTITY")) ? "LT" : alanadi;
                             list.Add(a);
                         }
                 }
@@ -844,6 +845,27 @@ namespace ArtEtiket
 
             return obj;
         }
+        public JObject Get_SCALEANDLABELDETAILS2(string StockId) 
+        {
+            JObject obj = new JObject();
+            obj["Action"] = "Execute";
+            obj["Object"] = "SP_STOCK_SCALEANDLABELDETAILS_SFICHEDETAIL";
+            obj["LoginToken"] = api.LoginToken;
+
+            var Parameters = new JObject();
+
+
+            //var Parameters1 = new JObject();
+            Parameters["STOCKFICHEDETAILID"] = StockId.ToString();
+           
+            obj["Parameters"] = Parameters;
+
+            //Parameters.Add(Parameters1);
+
+            // Parameters = Parameters1;
+            return obj;
+        }
+
 
 
         #endregion
@@ -969,10 +991,10 @@ namespace ArtEtiket
                 else
                 {
                     
-                    /*report1.PrintSettings.ShowDialog = false;
+                    report1.PrintSettings.ShowDialog = false;
                     report1.PrintSettings.Printer = BarkodPrinterName;
                     report1.Refresh();
-                    report1.Print();*/
+                    report1.Print(); 
                 }
                 report1.Abort();
             }
@@ -1010,17 +1032,33 @@ namespace ArtEtiket
             Parameters["LOTNO"] = LOTNO.ToString();
             //Parameters["STOCKID"] = STOCKID.ToString();
             Parameters["STOCKFICHEDETAILID"] = STOCKID.ToString();
-            Parameters["QUANTITY"] = QUANTITY.ToString();
+            Parameters["QUANTITY"] = QUANTITY;
             Parameters["TDATE"] = TDATE.ToString("yyyy-MM-dd HH:mm:ss");
             Parameters["TTIME"] = TTIME.ToString("HH:mm:ss");
-            Parameters["GROSSQUANTITY"] = GROSSQUANTITY.ToString();
-            Parameters["TARE"] = TARE.ToString();
+            Parameters["GROSSQUANTITY"] = GROSSQUANTITY;
+            Parameters["TARE"] = TARE;
             Parameters["PRODUCTIONDATE"] = PRODUCTIONDATE.ToString("yyyy-MM-dd HH:mm:ss");
             Parameters["EXPIRATIONDATE"] = EXPIRATIONDATE.ToString("yyyy-MM-dd HH:mm:ss");
             obj["Parameters"] = Parameters;
 
             string s = api.post(obj.ToString());
- 
+
+            //JArray R = new JArray();
+
+            if (!s.Contains("]")||!s.Contains("["))
+            {
+                MessageBox.Show(s.ToString()+ " Object: SP_STOCK_SCALE_TRANS_INSERT", "ElektraWeb", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw null;
+            }
+            /*R = JArray.Parse(s);
+            if (Convert.ToBoolean(R[0][0]["SUCCESS"])==false)
+            {
+                
+                MessageBox.Show(R[0][0]["MESSAGE"].ToString(), "ElektraWeb",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                throw null;
+            }*/
+           
+
 
         }
 
@@ -1047,10 +1085,9 @@ namespace ArtEtiket
 
             //var Parameters1 = new JObject();
             Parameters["STOCKFICHEDETAILID"] = stokid.ToString();
-            Parameters["MIKTAR"] = miktar.ToString();
-            Parameters["DARA"] = daramiktar.ToString();
+            Parameters["MIKTAR"] = miktar;
+            Parameters["DARA"] = daramiktar;
             Parameters["PARTINO"] = partino.ToString();
-            Parameters["HOTELID"] = "18892";
             obj["Parameters"] = Parameters;
 
             //Parameters.Add(Parameters1);
