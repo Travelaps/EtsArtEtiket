@@ -25,6 +25,7 @@ namespace ArtEtiket.DAL
             if (LoginOl==true)
             {
                 Login();
+                obj["LoginToken"] = this.LoginToken;
                 data = post(obj.ToString());
             }
             
