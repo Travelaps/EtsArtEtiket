@@ -475,15 +475,21 @@ namespace ArtEtiket
        
             obj["Object"] = "QA_STOCK_SEMIPRODUCT_GROUPS";// 
             obj["LoginToken"] = api.LoginToken;
-            //MessageBox.Show(api.LoginToken);
-           /* var where = new JArray();
-            obj["Where"] = where;
+            var Paging = new JObject();
+            Paging["Current"] = 1;
+            Paging["ItemsPerPage"] = 1000;
 
-            var where1 = new JObject();
-            where1["Column"] = "STOCKTYPE";
-            where1["Operator"] = "=";
-            where1["Value"] = "1";
-            where.Add(where1);*/
+
+            obj["Paging"] = Paging;
+            //MessageBox.Show(api.LoginToken);
+            /* var where = new JArray();
+             obj["Where"] = where;
+
+             var where1 = new JObject();
+             where1["Column"] = "STOCKTYPE";
+             where1["Operator"] = "=";
+             where1["Value"] = "1";
+             where.Add(where1);*/
 
             return obj;
         }
@@ -494,6 +500,19 @@ namespace ArtEtiket
 
             obj["Object"] = "QA_STOCK_PRODUCTIONFICHES_NOT_COMPLETE";//  
             obj["LoginToken"] = api.LoginToken;
+            var Paging = new JObject();
+            Paging["Current"] = 1;
+            Paging["ItemsPerPage"] = 1000;
+
+
+            obj["Paging"] = Paging;
+
+            var OrderBy = new JArray();
+            obj["OrderBy"] = OrderBy;
+            var OrderBy2 = new JObject();
+            OrderBy2["Column"] = "NOTES";
+            OrderBy2["Direction"] = "ASC";
+            OrderBy.Add(OrderBy2);
             //MessageBox.Show(api.LoginToken);
             /* var where = new JArray();
              obj["Where"] = where;
@@ -516,10 +535,24 @@ namespace ArtEtiket
             var where = new JArray();
             obj["Where"] = where;
 
-           /* var where1 = new JObject();
-            where1["Column"] = "STOCKTYPE";
-            where1["Operator"] = "=";
-            where1["Value"] = "1";*/
+            var Paging = new JObject();
+            Paging["Current"] = 1;
+            Paging["ItemsPerPage"] = 1000;
+
+
+            obj["Paging"] = Paging;
+
+            var OrderBy = new JArray();
+            obj["OrderBy"] = OrderBy;
+            var OrderBy2 = new JObject();
+            OrderBy2["Column"] = "NAME";
+            OrderBy2["Direction"] = "ASC";
+            OrderBy.Add(OrderBy2);
+
+            /* var where1 = new JObject();
+             where1["Column"] = "STOCKTYPE";
+             where1["Operator"] = "=";
+             where1["Value"] = "1";*/
 
             var where2 = new JObject();
 

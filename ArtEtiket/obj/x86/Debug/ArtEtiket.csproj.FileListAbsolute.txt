@@ -219,7 +219,6 @@ C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\bin\
 C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\bin\Debug\Microsoft.VisualStudio.Data.dll
 C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\bin\Debug\Newtonsoft.Json.dll
 C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\bin\Debug\Newtonsoft.Json.xml
-C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.csprojAssemblyReference.cache
 C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.Form1.resources
 C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.frmAdetSecim.resources
 C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.frmConnections.resources
