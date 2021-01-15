@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ArtEtiket.exe" size="188416">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ArtEtiket.exe" size="188928">
       <assemblyIdentity name="ArtEtiket" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>f3q0JKT+Mg8b9MHt/N3RK+4UgOg=</dsig:DigestValue>
+        <dsig:DigestValue>WtTNYmIFthRtMz6pe4jvZ/RHEfU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -126,13 +126,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="ArtEtiket.exe.config" size="7740">
+  <file name="ArtEtiket.exe.config" size="8020">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>XcRYHFXkd7Qiv6tI0pLuSI9qIu4=</dsig:DigestValue>
+      <dsig:DigestValue>U1iFPoM+h5JhiVJqGOGjUkE/5C4=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Arteus.ico" size="766">

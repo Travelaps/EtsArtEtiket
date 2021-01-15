@@ -66,11 +66,17 @@ namespace ArtEtiket
             api = new Nodejs();
             serialPort1.PortName = _comPort;
             serialPort1.BaudRate = _comPortBaudRate;
-            OpenPort();
-
-            timer1.Interval = _timer1Sure;
-            timer2.Interval = _timer2Sure;
-
+            if (Properties.Settings.Default.ComportAktif == true)
+            {
+                OpenPort();
+                timer1.Interval = _timer1Sure;
+                timer2.Interval = _timer2Sure;
+            }
+            else
+            {
+                txtMiktar.BackColor = Color.Yellow;
+            }
+             
             //rtbOkunan.Visible = TeraziBilgiIncelemeAktif;
             rtbLOG.Visible = _teraziBilgiIncelemeAktif;
 
