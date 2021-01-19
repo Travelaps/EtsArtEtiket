@@ -237,3 +237,41 @@ C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\obj\
 C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.csproj.CopyComplete
 C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.exe
 C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.pdb
+D:\Github\CSharp\EtsArtEtiket\ArtEtiket\bin\Debug\raporlar\Arteus.ico
+D:\Github\CSharp\EtsArtEtiket\ArtEtiket\bin\Debug\raporlar\Imren.png
+D:\Github\CSharp\EtsArtEtiket\ArtEtiket\bin\Debug\raporlar\imrenRecel w100 x h53 mm.frx
+D:\Github\CSharp\EtsArtEtiket\ArtEtiket\bin\Debug\raporlar\imrenTatli w100 x h53 mm.frx
+D:\Github\CSharp\EtsArtEtiket\ArtEtiket\bin\Debug\raporlar\imrenRecel.frx
+D:\Github\CSharp\EtsArtEtiket\ArtEtiket\bin\Debug\raporlar\imrenRecel - Copy.frx
+D:\Github\CSharp\EtsArtEtiket\ArtEtiket\bin\Debug\raporlar\imren.frx
+D:\Github\CSharp\EtsArtEtiket\ArtEtiket\bin\Debug\raporlar\imrenTatli.frx
+D:\Github\CSharp\EtsArtEtiket\ArtEtiket\bin\Debug\ArtEtiket.exe.config
+D:\Github\CSharp\EtsArtEtiket\ArtEtiket\bin\Debug\ArtEtiket.exe.manifest
+D:\Github\CSharp\EtsArtEtiket\ArtEtiket\bin\Debug\ArtEtiket.application
+D:\Github\CSharp\EtsArtEtiket\ArtEtiket\bin\Debug\ArtEtiket.exe
+D:\Github\CSharp\EtsArtEtiket\ArtEtiket\bin\Debug\ArtEtiket.pdb
+D:\Github\CSharp\EtsArtEtiket\ArtEtiket\bin\Debug\FastReport.Bars.dll
+D:\Github\CSharp\EtsArtEtiket\ArtEtiket\bin\Debug\FastReport.Compat.dll
+D:\Github\CSharp\EtsArtEtiket\ArtEtiket\bin\Debug\FastReport.dll
+D:\Github\CSharp\EtsArtEtiket\ArtEtiket\bin\Debug\FastReport.Editor.dll
+D:\Github\CSharp\EtsArtEtiket\ArtEtiket\bin\Debug\Microsoft.VisualStudio.Data.dll
+D:\Github\CSharp\EtsArtEtiket\ArtEtiket\bin\Debug\Newtonsoft.Json.dll
+D:\Github\CSharp\EtsArtEtiket\ArtEtiket\bin\Debug\Newtonsoft.Json.xml
+D:\Github\CSharp\EtsArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.csprojResolveAssemblyReference.cache
+D:\Github\CSharp\EtsArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.Form1.resources
+D:\Github\CSharp\EtsArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.frmAdetSecim.resources
+D:\Github\CSharp\EtsArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.frmConnections.resources
+D:\Github\CSharp\EtsArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.frmFaturaDetay.resources
+D:\Github\CSharp\EtsArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.frmLabel.resources
+D:\Github\CSharp\EtsArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.frmMain.resources
+D:\Github\CSharp\EtsArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.frmStok.resources
+D:\Github\CSharp\EtsArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.frmStokDetay.resources
+D:\Github\CSharp\EtsArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.frmParcalama.resources
+D:\Github\CSharp\EtsArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.frmUretim.resources
+D:\Github\CSharp\EtsArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.Properties.Resources.resources
+D:\Github\CSharp\EtsArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.csproj.GenerateResource.Cache
+D:\Github\CSharp\EtsArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.csproj.CoreCompileInputs.cache
+D:\Github\CSharp\EtsArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.exe.manifest
+D:\Github\CSharp\EtsArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.application
+D:\Github\CSharp\EtsArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.exe
+D:\Github\CSharp\EtsArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.pdb

@@ -816,10 +816,16 @@ namespace ArtEtiket
                         lblKoliToplami.Text = "Koli Toplamı : " + koliToplami.ToString();
                     }
                     #endregion
+                    var partino = PartiNoUret(DateTime.Now.Date);
+                    var prefix = partino.Substring(0, 6);
+                    int suffix = Convert.ToInt32(partino.Substring(6, 4));
 
                     for (int k = 1; k <= tepsiAdedi; k++)
                     {
-                        EtiketBas(stokid, miktar, daramiktar, KoliAktif, koliGrupID);
+                        EtiketBas(stokid, miktar, daramiktar, KoliAktif, koliGrupID, partino, false);
+
+                        suffix += 1;
+                        partino = prefix + suffix.ToString();
                     }
                 }
             }
@@ -938,16 +944,15 @@ namespace ArtEtiket
         }
         #endregion
 
-        private void EtiketBas(int stokid, double miktar, double daramiktar, bool koliicinde, int koligrupid, string partino="")
+        private void EtiketBas(int stokid, double miktar, double daramiktar, bool koliicinde, int koligrupid, string partino="", bool tekrarbas = false)
         {
-            bool tekrarbasim = false;
+            //bool tekrarbasim = false;
             if (partino == "")
             {
                 partino = PartiNoUret(DateTime.Now.Date);
-              
             }
-            else
-                tekrarbasim = true;
+            //else
+            //    tekrarbasim = true;
 
             //_sqlProvider = new SqlProvider(
 
@@ -979,7 +984,7 @@ namespace ArtEtiket
      _sqlProvider.AddParameter("PARTINO", partino);*/
 
 
-           var dataSet=  api.GetDataSet(PrintBarcode(stokid, partino, miktar, daramiktar),"Execute");
+            var dataSet=  api.GetDataSet(PrintBarcode(stokid, partino, miktar, daramiktar),"Execute");
             System.Data.DataTable dTable = dataSet.Tables["datatable1"]; 
 
  
@@ -992,7 +997,7 @@ namespace ArtEtiket
                 DateTime sktarihi = Convert.ToDateTime(dt.Rows[0]["SKTARIHI"].ToString());
                 string birim = dt.Rows[0]["BIRIM"].ToString();
 
-                if (!tekrarbasim)
+                if (!tekrarbas)
                 {
                     ///double GROSSQUANTITY = Convert.ToDouble(dt.Rows[0]["GROSSQUANTITY"].ToString());
                      
@@ -1247,7 +1252,7 @@ namespace ArtEtiket
                 double daramiktar = 0;
                 if (dbOperation.TekrarEtiketYazdirilacakKaydiBul(txtTekrarBarkod.Text, ref stokid, ref miktar))
                 {
-                    EtiketBas(stokid,miktar,daramiktar,false,0,partino);
+                    EtiketBas(stokid,miktar,daramiktar,false,0,partino,true);
                 }
             }
 

@@ -15,16 +15,16 @@
       </applicationRequestMinimum>
       <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
         <!--
-          UAC Bildirim Seçenekleri
-          Windows Kullanıcı Hesabı Denetim düzeyini değiştirmek istiyorsanız 
-          requestedExecutionLevel düğümünü aşağıdakilerden biriyle değiştirin.
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
 
         <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
-        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
-        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
 
-         Geriye dönük uyumluluk için Dosya ve Kayıt Defteri Sanallaştırması’nı 
-         kullanmak istiyorsanız requestedExecutionLevel düğümünü silin.
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
     -->
         <requestedExecutionLevel level="asInvoker" uiAccess="false" />
       </requestedPrivileges>
@@ -43,6 +43,21 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.VisualStudio.OLE.Interop" version="7.1.40304.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.VisualStudio.Shell.Interop" version="7.1.40304.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.VisualStudio.TextManager.Interop" version="7.1.40304.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ArtEtiket.exe" size="188928">
       <assemblyIdentity name="ArtEtiket" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
@@ -50,7 +65,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>WtTNYmIFthRtMz6pe4jvZ/RHEfU=</dsig:DigestValue>
+        <dsig:DigestValue>G39wpOBtIyn6k2a+VkXxErmxf14=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -126,13 +141,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="ArtEtiket.exe.config" size="8020">
+  <file name="ArtEtiket.exe.config" size="8157">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>U1iFPoM+h5JhiVJqGOGjUkE/5C4=</dsig:DigestValue>
+      <dsig:DigestValue>AOxRsE5EmOltDnEFwAHTBIKFj2g=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Arteus.ico" size="766">
@@ -144,40 +159,40 @@
       <dsig:DigestValue>0TlUXaTd9dGFUIjflXmzdGTiZ2s=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="dbScript\01 Create Table PARTI_NO_TERAZI - Copy.sql" size="1081">
+  <file name="dbScript\01 Create Table PARTI_NO_TERAZI - Copy.sql" size="1105">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>H3Pvl967q0u27eYbnl3TwP7BV0k=</dsig:DigestValue>
+      <dsig:DigestValue>lvn0heqg7dp/XYSN/qK/lXvfoVU=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="dbScript\02 ALTER TABLE ARTETIKET - Adet ve Dara lar.sql" size="833">
+  <file name="dbScript\02 ALTER TABLE ARTETIKET - Adet ve Dara lar.sql" size="853">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>kLf5XlRoXiBZY1KjQNLnSxd7jQo=</dsig:DigestValue>
+      <dsig:DigestValue>1Zf1w1AhNFFZj1xOhCE7nC58Uq0=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="dbScript\03 ALTER TABLE PARTI_NO_TERAZI Dara Eklendi.sql" size="130">
+  <file name="dbScript\03 ALTER TABLE PARTI_NO_TERAZI Dara Eklendi.sql" size="136">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>aQzJaFiuii0VNOSa7mGHL2uRI4g=</dsig:DigestValue>
+      <dsig:DigestValue>Wlm3Sn/9+CtHre5FnhroSwTlqKU=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="dbScript\04 ALTER TABLE PARTI_NO_TERAZI SKT Eklendi.sql" size="160">
+  <file name="dbScript\04 ALTER TABLE PARTI_NO_TERAZI SKT Eklendi.sql" size="166">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>tckMA5n4z9We7fwsed0AAyAmKQU=</dsig:DigestValue>
+      <dsig:DigestValue>fQHjoxfRE/OysHT3+mW/klfqVeE=</dsig:DigestValue>
     </hash>
   </file>
   <file name="raporlar\Arteus.ico" size="766">

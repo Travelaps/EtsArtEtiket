@@ -12,7 +12,7 @@ namespace ArtEtiket.DAL
         public string ENDPOINTURL { get; set; } = "https://4001.hoteladvisor.net/";
 
         public string LoginToken { get; set; }
-        public string HotelId { get; set; }
+        public int HotelId { get; set; }
         public string UserName { get; set; }
         public string PassWord { get; set; }
          
@@ -144,8 +144,9 @@ namespace ArtEtiket.DAL
 
         public bool Login()
         {
-            var loginResp = post(@"{ ""Action"":""Login"", ""Tenant"":""16534"", ""Usercode"":""ENTEGRASYON"", ""Password"":""123456aA.""}");
-            //var loginResp = post(@"{ ""Action"":""Login"", ""Tenant"":""18892"", ""Usercode"":""demo"", ""Password"":""123""}");
+            //HotelId = Properties.Settings.Default.HOTELID;
+          //var loginResp = post(@"{ ""Action"":""Login"", ""Tenant"":""16534"", ""Usercode"":""ENTEGRASYON"", ""Password"":""123456aA.""}");
+            var loginResp = post(@"{ ""Action"":""Login"", ""Tenant"":""18892"", ""Usercode"":""demo"", ""Password"":""123""}");
             var Success = (bool)JObject.Parse(loginResp)["Success"];
             string token = "";
             if (Success == true)
