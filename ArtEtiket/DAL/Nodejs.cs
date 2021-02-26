@@ -143,9 +143,10 @@ namespace ArtEtiket.DAL
         }
 
         public bool Login()
-        {
+        {//16534xxUkt`6W#m@UhZC?
             //HotelId = Properties.Settings.Default.HOTELID;
-            var loginResp = post(@"{ ""Action"":""Login"", ""Tenant"":""16534"", ""Usercode"":""ENTEGRASYON"", ""Password"":""123456aA.""}");
+            var loginResp = post(@"{ ""Action"":""Login"", ""Tenant"":""16534"", ""Usercode"":""TERAZIENT"", ""Password"":""16534xxUkt`6W#m@UhZC?""}");
+            //post(@"{ ""Action"":""Login"", ""Tenant"":""16534"", ""Usercode"":""ENTEGRASYON"", ""Password"":""123456aA.""}");
             //var loginResp = post(@"{ ""Action"":""Login"", ""Tenant"":""18892"", ""Usercode"":""demo"", ""Password"":""123""}");
             var Success = (bool)JObject.Parse(loginResp)["Success"];
             string token = "";
@@ -156,11 +157,11 @@ namespace ArtEtiket.DAL
                 return true;
             }
             return false;
-             
+
         }
 
 
-        
+
         /*
          var loginResp = post(@"{ ""Action"":""Login"", ""Tenant"":""18892"", ""Usercode"":""demo"", ""Password"":""123""}");
             var token = (string)JObject.Parse(loginResp)["LoginToken"];
