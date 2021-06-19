@@ -249,6 +249,12 @@ namespace ArtEtiket
                         else
                             i++;
                         break;
+                    case "TEM":
+                        if (okunan[i].Length < 9 || okunan[i].Substring(0, 1) != "+"  )
+                            okunan.RemoveAt(i);
+                        else
+                            i++;
+                        break;
 
                     default:
                         break;
@@ -303,6 +309,7 @@ namespace ArtEtiket
                 case "100KG": kg = line.Substring(6, 8); break;
                 case "30KG": kg = line.Substring(8, 7); break;
                 case "CAS": kg = line.Substring(1, 7); break;
+                case "TEM": kg = line.Substring(1, 8); break;
                 default:
                     break;
             }
@@ -499,6 +506,39 @@ namespace ArtEtiket
 
             return obj;
         }
+        public JObject GetDepartment() 
+        {
+            JObject obj = new JObject();
+            obj["Action"] = "Select";
+
+            obj["Object"] = "HOTEL_DEPARTMENT";// 
+            obj["LoginToken"] = api.LoginToken;
+            var Paging = new JObject();
+            Paging["Current"] = 1;
+            Paging["ItemsPerPage"] = 1000;
+
+
+            obj["Paging"] = Paging;
+            //MessageBox.Show(api.LoginToken);
+            var where = new JArray();
+             obj["Where"] = where;
+            
+             var where1 = new JObject();
+             where1["Column"] = "DEPTTYPE";
+             where1["Operator"] = "=";
+             where1["Value"] = "2"; 
+             where.Add(where1);
+
+            var where2 = new JObject();
+            where2["Column"] = "ISDISABLED";
+            where2["Operator"] = "=";
+            where2["Value"] = "0";
+            where.Add(where2);
+
+            return obj;
+        }
+
+
         public JObject GetProductionFiches() 
         {
             JObject obj = new JObject();
@@ -735,7 +775,7 @@ namespace ArtEtiket
             var btn = sender as Button;
             var adetUrun = (!(btn.Text.Contains("(KG)"))); //(btn.Text.Contains("(ADET)") || btn.Text.Contains("(LT)"));
 
-            if ((txtMiktar.BackColor == Color.Red) && !(adetUrun) )
+            if ((txtMiktar.BackColor != Color.Red) && !(adetUrun) )
             {
 
             }
@@ -922,15 +962,24 @@ namespace ArtEtiket
             //Once varolan butonları silelim
             pnlSubeler.Controls.Clear();
 
+            var getBranch = GetDepartment();
+            var dt2 = api.GetDataSet(getBranch);
 
-            var dt = dbOperation.SubeListesi();
+            System.Data.DataTable DepartmentDTable = dt2.Tables["datatable1"];
+             
+            var dt = new DataTable();
+             
+            dt = DepartmentDTable;
+              
+            //var dt = dbOperation.SubeListesi();
             foreach (DataRow row in dt.Rows)
             {
+                //MessageBox.Show(row["DEPARTMENTNAME"].ToString() );
                 var btn = new Button
                 {
                     Height = pnlSubeler.Height - 5,
-                    Width = (pnlSubeler.Width - dt.Rows.Count * 6) / dt.Rows.Count,
-                    Text = row["SUBEKODU"].ToString()
+                    Width = 65,//(pnlSubeler.Width - dt.Rows.Count * 6) / dt.Rows.Count,
+                    Text = row["DEPARTMENTNAME"].ToString()//row["SUBEKODU"].ToString()
                 };
                 btn.Click += new EventHandler(btn_SubeClick);
                 pnlSubeler.Controls.Add(btn);
@@ -995,6 +1044,9 @@ namespace ArtEtiket
             {
                 DateTime uretimtarihi = Convert.ToDateTime(dt.Rows[0]["TARIH"].ToString());
                 DateTime sktarihi = Convert.ToDateTime(dt.Rows[0]["SKTARIHI"].ToString());
+                
+                
+
                 string birim = dt.Rows[0]["BIRIM"].ToString();
 
                 if (!tekrarbas)
@@ -1020,6 +1072,21 @@ namespace ArtEtiket
 
                 report1.Load(AppDomain.CurrentDomain.BaseDirectory + "\\Raporlar\\" +
                                frxDosyaAdi.Replace(".frx","") + ".frx");
+
+
+                foreach (DataRow dr in dt.Rows) // search whole table
+                {
+                    if (dr["TARIH"] != null) // if id==2
+                    {
+                        dr["TARIH"] = dr["TARIH"].ToString().Substring(0,10); //change the name
+                                                   //break; break or not depending on you
+                    }
+                    if (dr["SKTARIHI"] != null) // if id==2
+                    {
+                        dr["SKTARIHI"] = dr["SKTARIHI"].ToString().Substring(0,10); //change the name
+                                                                              //break; break or not depending on you
+                    }
+                }
 
                 report1.RegisterData(dt, "Etiket");
                 report1.GetDataSource("Etiket").Enabled = true;

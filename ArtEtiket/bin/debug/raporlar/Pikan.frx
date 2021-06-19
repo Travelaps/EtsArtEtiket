@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="12/30/2013 12:45:17" ReportInfo.Modified="06/19/2021 13:25:27" ReportInfo.CreatorVersion="2019.2.15.0">
+  <Dictionary>
+    <TableDataSource Name="Etiket" ReferenceName="Etiket" DataType="System.Int32" Enabled="true">
+      <Column Name="ID" DataType="System.Int32"/>
+      <Column Name="TARIH" DataType="System.DateTime"/>
+      <Column Name="ENO" DataType="System.String"/>
+      <Column Name="TUR" DataType="System.String"/>
+      <Column Name="ETIKETTURU" DataType="System.String"/>
+      <Column Name="GDEPO" DataType="System.String"/>
+      <Column Name="CDEPO" DataType="System.String"/>
+      <Column Name="VDNO" DataType="System.String"/>
+      <Column Name="VD" DataType="System.String"/>
+      <Column Name="ADRES1" DataType="System.String"/>
+      <Column Name="ADRES2" DataType="System.String"/>
+      <Column Name="URETIMID" DataType="System.Int32"/>
+      <Column Name="URETIMTURU" DataType="System.String"/>
+      <Column Name="YAZ" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="HAREKETISLID" DataType="System.Int32"/>
+      <Column Name="BIRIM" DataType="System.String"/>
+      <Column Name="SKTARIHI" DataType="System.DateTime"/>
+      <Column Name="ADI" DataType="System.String"/>
+      <Column Name="KOPYASAYISI" DataType="System.Int32"/>
+      <Column Name="MIKTAR" DataType="System.Double"/>
+      <Column Name="PARTINO" DataType="System.String"/>
+      <Column Name="ACIKLAMA" DataType="System.String"/>
+      <Column Name="ICINDEKILER" DataType="System.String"/>
+      <Column Name="EK2" DataType="System.String"/>
+      <Column Name="EK3" DataType="System.String"/>
+      <Column Name="EK4" DataType="System.String"/>
+      <Column Name="NETAGIRLIK" DataType="System.String"/>
+      <Column Name="NOT" DataType="System.String"/>
+      <Column Name="OZELKOD6" DataType="System.String"/>
+      <Column Name="ETIKETEK2" DataType="System.String"/>
+      <Column Name="ETIKETEK3" DataType="System.String"/>
+      <Column Name="ETIKETEK4" DataType="System.String"/>
+      <Column Name="ETIKETEK5" DataType="System.String"/>
+      <Column Name="ETIKETEK6" DataType="System.String"/>
+      <Column Name="ETIKETEK7" DataType="System.String"/>
+      <Column Name="ETIKETEK8" DataType="System.String"/>
+      <Column Name="ETIKETEK9" DataType="System.String"/>
+      <Column Name="ETIKETEK10" DataType="System.String"/>
+      <Column Name="ETIKETEK1" DataType="System.String"/>
+    </TableDataSource>
+  </Dictionary>
+  <ReportPage Name="Page1" Landscape="true" PaperWidth="55" PaperHeight="35" LeftMargin="0" TopMargin="0" RightMargin="0" BottomMargin="0" MirrorMargins="true" Watermark.Font="Arial, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="207.9" Height="147.42">
+      <TextObject Name="Text2" Left="-1.32" Top="13.23" Width="18.9" Height="126.63" CanBreak="false" Text="GLOBAL GIDA TUR. TIC. SAN.  LTD. ŞTI." HorzAlign="Center" Angle="270" Font="Tahoma, 4pt, style=Bold"/>
+      <BarcodeObject Name="Barcode1" Left="158.25" Top="28.35" Width="28.35" Height="94.5" Angle="270" AutoSize="false" DataColumn="Etiket.PARTINO" ShowText="false" Barcode="Code128" Barcode.AutoEncode="true"/>
+      <TextObject Name="Text11" Left="104.05" Top="103.95" Width="18.9" Height="37.8" Border.Lines="Left, Right" Text="Net:" VertAlign="Center" Angle="270" Font="Tahoma, 10pt, style=Bold"/>
+      <TextObject Name="Text14" Left="36.05" Top="9.45" Width="49.47" Height="132.3" Border.Lines="Left, Right" GrowToBottom="true" Text="[Etiket.ADI]" HorzAlign="Center" Angle="270" Font="Tahoma, 10pt, style=Bold"/>
+      <TextObject Name="Text15" Left="86.5" Top="81.27" Width="15.12" Height="60.48" Text="ÜT: [Etiket.TARIH]" Format="Custom" Format.Format="dd/MM/yyyy" VertAlign="Center" Angle="270" Font="Tahoma, 6pt"/>
+      <TextObject Name="Text16" Left="86.5" Top="9.45" Width="15.12" Height="71.82" Text="SKT: [Etiket.SKTARIHI]" Format="Custom" Format.Format="dd/MM/yyyy" VertAlign="Center" Angle="270" Font="Tahoma, 6pt"/>
+      <TextObject Name="Text19" Left="7" Top="17.01" Width="28.35" Height="124.74" CanBreak="false" Text="Meydan Kavağı Mah. İsmail Cem Cad. No:4  &#13;&#10;Muratpaşa/Antalya &#13;&#10;Tel: 0(242) 312 44 24 e-Posta: bilgi@pikan.co" HorzAlign="Center" VertAlign="Bottom" Angle="270" WordWrap="false" Font="Tahoma, 4pt"/>
+      <TextObject Name="Text3" Left="188.5" Top="10.4" Width="11.34" Height="131.35" Text="Parti No : [Etiket.PARTINO]" HorzAlign="Center" VertAlign="Center" Angle="270" Font="Tahoma, 6pt, style=Bold"/>
+      <TextObject Name="Text29" Left="135.45" Top="-1.89" Width="18.9" Height="143.64" Text="[Etiket.ETIKETEK3]&#13;&#10;[Etiket.ETIKETEK4]" Angle="270" Font="Tahoma, 5pt"/>
+      <TextObject Name="Text30" Left="124.3" Top="-1.89" Width="11.34" Height="143.64" Text="[Etiket.ETIKETEK2]" Angle="270" Font="Tahoma, 5pt, style=Bold, Italic"/>
+      <TextObject Name="Text1" Left="104.05" Top="9.45" Width="18.9" Height="94.5" Border.Lines="Left, Right" Text="[Etiket.MIKTAR]" Format="Number" Format.UseLocale="true" HorzAlign="Right" Angle="270" WordWrap="false" Font="Tahoma, 10pt, style=Bold" Trimming="EllipsisCharacter"/>
+    </ReportTitleBand>
+  </ReportPage>
+</Report>

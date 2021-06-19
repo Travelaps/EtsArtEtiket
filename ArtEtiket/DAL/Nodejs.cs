@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
+using System.Windows.Forms;
 using Newtonsoft.Json.Linq;
 namespace ArtEtiket.DAL
 {
@@ -12,8 +14,9 @@ namespace ArtEtiket.DAL
         public string ENDPOINTURL { get; set; } = "https://4001.hoteladvisor.net/";
 
         public string LoginToken { get; set; }
-        public int HotelId { get; set; }
+        public string HotelId { get; set; }
         public string UserName { get; set; }
+        public string EndPointUrl { get; set; }
         public string PassWord { get; set; }
          
         public  System.Data.DataSet GetDataSet(Newtonsoft.Json.Linq.JObject obj, string ActionType = "Select")
@@ -141,11 +144,52 @@ namespace ArtEtiket.DAL
             request.Abort();
             return responseBody;
         }
+        string CREDENTIALSPATH = Environment.CurrentDirectory + @"\Credentials.txt";
+        public void AutoLogin()
+        {
+            if (!File.Exists(CREDENTIALSPATH))
+            {
+                File.CreateText(CREDENTIALSPATH);
+                System.Threading.Thread.Sleep(1000);
+            }
+
+            if (File.Exists(CREDENTIALSPATH))
+            {
+                var lines = System.IO.File.ReadAllText(CREDENTIALSPATH).Split('\n');
+                HotelId = (lines.FirstOrDefault() ?? "").Replace("\n", "").Replace("\r", "").Replace(" ", "");
+                UserName= (lines.Skip(1).FirstOrDefault() ?? "").Replace("\n", "").Replace("\r", "").Replace(" ", "");
+                PassWord = (lines.Skip(2).FirstOrDefault() ?? "").Replace("\n", "").Replace("\r", "").Replace(" ", "");
+               // deviceId = (lines.Skip(3).FirstOrDefault() ?? "").Replace("\n", "").Replace("\r", "").Replace(" ", "");
+
+                EndPointUrl = (lines.Skip(4).FirstOrDefault() ?? "").Replace("\n", "").Replace("\r", "").Replace(" ", "");
+
+                //exeFileName = (lines.Skip(5).FirstOrDefault() ?? "").Replace("\n", "").Replace("\r", "").Replace(" ", "");
+
+                /*
+
+                MessageBox.Show("txtTenant: "+ (lines.FirstOrDefault() ?? "").Replace("\n", "").Replace("\r", "").Replace(" ", "") +
+
+                    " txtUser: "+ (lines.Skip(1).FirstOrDefault() ?? "").Replace("\n", "").Replace("\r", "").Replace(" ", "")+
+                    " txtPassword: " + (lines.Skip(2).FirstOrDefault() ?? "").Replace("\n", "").Replace("\r", "").Replace(" ", "")+" "+
+                    " deviceId: "+ (lines.Skip(3).FirstOrDefault() ?? "").Replace("\n", "").Replace("\r", "").Replace(" ", "")+" "+
+                    " EndPointUrl: "+ (lines.Skip(4).FirstOrDefault() ?? "").Replace("\n", "").Replace("\r", "").Replace(" ", ""));
+                    */
+                //btnGiris.PerformClick();
+                //Login();
+            }
+        }
+
 
         public bool Login()
         {//16534xxUkt`6W#m@UhZC?
             //HotelId = Properties.Settings.Default.HOTELID;
-            var loginResp = post(@"{ ""Action"":""Login"", ""Tenant"":""16534"", ""Usercode"":""TERAZIENT"", ""Password"":""16534xxUkt`6W#m@UhZC?""}");
+            AutoLogin();
+            if (string.IsNullOrEmpty(HotelId) || string.IsNullOrEmpty(UserName) || string.IsNullOrEmpty(PassWord))
+            {
+                MessageBox.Show("Lütfen giriş bilgilerinizi kontrol ediniz", "ElektraWeb", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Application.Exit();
+            }
+            var loginResp = post(@"{ ""Action"":""Login"", ""Tenant"":"""+HotelId+@""", ""Usercode"":"""+UserName+@""", ""Password"":"""+PassWord+@"""}");
             //post(@"{ ""Action"":""Login"", ""Tenant"":""16534"", ""Usercode"":""ENTEGRASYON"", ""Password"":""123456aA.""}");
             //var loginResp = post(@"{ ""Action"":""Login"", ""Tenant"":""18892"", ""Usercode"":""demo"", ""Password"":""123""}");
             var Success = (bool)JObject.Parse(loginResp)["Success"];
