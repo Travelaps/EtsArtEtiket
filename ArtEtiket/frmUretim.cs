@@ -535,6 +535,19 @@ namespace ArtEtiket
             where2["Value"] = "0";
             where.Add(where2);
 
+            var where3 = new JObject();
+            where3["Column"] = "DEPARTMENTNAME";
+            where3["Operator"] = "NOT LIKE";
+            where3["Value"] = "%.%";
+            where.Add(where3);
+
+            var orderby = new JArray();
+            obj["OrderBy"] = orderby;
+            var orderby1 = new JObject();
+            orderby1["Column"] = "DEPARTMENTNAME";
+            orderby1["Direction"] = "ASC";
+            orderby.Add(orderby1);
+
             return obj;
         }
 
@@ -773,9 +786,9 @@ namespace ArtEtiket
         void btn_MamulClick(object sender, EventArgs e)
         {
             var btn = sender as Button;
-            var adetUrun = (!(btn.Text.Contains("(KG)"))); //(btn.Text.Contains("(ADET)") || btn.Text.Contains("(LT)"));
+            var adetUrun = (!(btn.Text.Contains("(KG)") || btn.Text.Contains("(Kg)"))); //(btn.Text.Contains("(ADET)") || btn.Text.Contains("(LT)"));
 
-            if ((txtMiktar.BackColor != Color.Red) && !(adetUrun) )
+            if ((txtMiktar.BackColor == Color.Red) && !(adetUrun) )
             {
 
             }
@@ -860,12 +873,16 @@ namespace ArtEtiket
                     var prefix = partino.Substring(0, 6);
                     int suffix = Convert.ToInt32(partino.Substring(6, 4));
 
-                    for (int k = 1; k <= tepsiAdedi; k++)
+                    if (1 == 1)
+                        LOTBarcodePrint(stokid, miktar, daramiktar, KoliAktif, koliGrupID, "", false, tepsiAdedi);
+                    else
                     {
-                        EtiketBas(stokid, miktar, daramiktar, KoliAktif, koliGrupID, partino, false);
-
-                        suffix += 1;
-                        partino = prefix + suffix.ToString();
+                        for (int k = 1; k <= tepsiAdedi; k++)
+                        {
+                            EtiketBas(stokid, miktar, daramiktar, KoliAktif, koliGrupID, partino, false);
+                            suffix += 1;
+                            partino = prefix + suffix.ToString();
+                        }
                     }
                 }
             }
@@ -1114,7 +1131,78 @@ namespace ArtEtiket
             etiketsubeadi = "";
         }
 
-        public void PartiNoInsert(string LOTNO, int STOCKID, double QUANTITY, DateTime TDATE, DateTime TTIME, double GROSSQUANTITY,double TARE,DateTime PRODUCTIONDATE,DateTime EXPIRATIONDATE)
+        //2021-06-20:TEOMAN, önce Partino database den gelip sonra bu basılmalı
+        private void LOTBarcodePrint(int stockfichedetailid, double quantity, double tarequantity, bool insidepackage, int packagegroupid, string lotno = "", bool reprint = false, int copyCount = 1)
+        {
+            var newTransIds = "";
+            reprint = (lotno != "");
+            if (!reprint)
+            {
+                newTransIds = ScaleTransInsert(stockfichedetailid, quantity, tarequantity, copyCount);
+                //if (UretimTalebiniOtomatikOlustur)
+                //    dbOperation.UretimTalebiniOlustur(lotno, stockfichedetailid, birim, quantity, uretimtarihi, UretimTalepDepoId);
+            }
+
+            var dataSet = api.GetDataSet(PrintLOTBarcode(newTransIds, lotno, etiketsubeadi), "Execute");
+            System.Data.DataTable dTable = dataSet.Tables["datatable1"];
+
+            var dt = new DataTable();
+            //dt.Load(_sqlProvider.ExecuteReader());
+            dt = dTable;
+            if (dt.Rows.Count != 0)
+            {
+                if (report1 == null)
+                    report1 = new FastReport.Report();
+
+                report1.Refresh();
+
+                string frxDosyaAdi = dt.Rows[0]["DESIGNFILENAME"].ToString().ToLower();
+                if (frxDosyaAdi == "")
+                    frxDosyaAdi = VarsayilanEtiket;
+
+                report1.Load(AppDomain.CurrentDomain.BaseDirectory + "\\Raporlar\\" +
+                               frxDosyaAdi.Replace(".frx", "") + ".frx");
+
+                foreach (DataRow dr in dt.Rows) // search whole table
+                {
+                    if (dr["TARIH"] != null) // if id==2     2021-06-15
+                    {
+                        dr["TARIH"] = dr["TARIH"].ToString().Substring(8, 2)+"."+ dr["TARIH"].ToString().Substring(5, 2) + "." + dr["TARIH"].ToString().Substring(0, 4);
+                    }
+                    if (dr["SKTARIHI"] != null) // if id==2
+                    {
+                        dr["SKTARIHI"] = dr["SKTARIHI"].ToString().Substring(8, 2) + "." + dr["SKTARIHI"].ToString().Substring(5, 2) + "." + dr["SKTARIHI"].ToString().Substring(0, 4);
+                    }
+                }
+
+                report1.RegisterData(dt, "Etiket");
+                report1.GetDataSource("Etiket").Enabled = true;
+
+                if (Onizleme)
+                {
+                    report1.PrintSettings.Copies = 1;
+
+                    report1.PrintSettings.ShowDialog = true;
+                    //report1.PrintSettings.Printer = dsRow["Printer"].ToString();
+                    report1.Show();
+                }
+                else
+                {
+
+                    report1.PrintSettings.ShowDialog = false;
+                    report1.PrintSettings.Printer = BarkodPrinterName;
+                    report1.Refresh();
+                    report1.Print();
+                }
+                report1.Abort();
+            }
+            else
+                MessageBox.Show("Etiket Tasarımı Yapılmamış, MUHASEBEYE Haber Veriniz..");
+            etiketsubeadi = "";
+        }
+
+
+        public string PartiNoInsert(string LOTNO, int STOCKID, double QUANTITY, DateTime TDATE, DateTime TTIME, double GROSSQUANTITY,double TARE,DateTime PRODUCTIONDATE,DateTime EXPIRATIONDATE)
         {
             /* _sqlProvider = new SqlProvider("INSERT INTO [PARTI_NO_TERAZI] ([PARTINO],[STOKID],[MIKTAR],[DARA],[BURUTMIKTAR],[URETIMTARIHI],[SONKULLANMATARIHI],[KOLIICINDE],[KOLIGRUPID]) " +
                  " VALUES (@PARTINO,@STOKID,@MIKTAR,@DARA,@BURUTMIKTAR,@URETIMTARIHI,@SONKULLANMATARIHI,@KOLIICINDE,@KOLIGRUPID)", false);
@@ -1161,16 +1249,58 @@ namespace ArtEtiket
                 MessageBox.Show(s.ToString()+ " Object: SP_STOCK_SCALE_TRANS_INSERT", "ElektraWeb", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 throw null;
             }
-            /*R = JArray.Parse(s);
+
+            JArray R = JArray.Parse(s);
             if (Convert.ToBoolean(R[0][0]["SUCCESS"])==false)
             {
                 
                 MessageBox.Show(R[0][0]["MESSAGE"].ToString(), "ElektraWeb",MessageBoxButtons.OK,MessageBoxIcon.Error);
                 throw null;
-            }*/
-           
+            }
 
+            if (Convert.ToBoolean(R[0][0]["SUCCESS"]) == true)
+            {
+                return R[0][0]["LOTNO"].ToString();
+            }
+            else
+                return "ERROR";
+        }
 
+        //2021-06-20:TEOMAN, once database e TRANS insert olup oradan gelen parti no basılacak.
+        public string ScaleTransInsert(int stockfichedetailid, double quantity, double tarequantity, int copyCount)
+        {
+            JObject obj = new JObject();
+            obj["Action"] = "Execute";
+            obj["Object"] = "SP_STOCK_SCALE_TRANS_INSERT";
+            obj["LoginToken"] = api.LoginToken;
+
+            var Parameters = new JObject();
+            Parameters["STOCKFICHEDETAILID"] = stockfichedetailid.ToString();
+            Parameters["QUANTITY"] = quantity;
+            Parameters["TARE"] = tarequantity;
+            Parameters["LOTCOUNT"] = copyCount;
+            obj["Parameters"] = Parameters;
+            string s = api.post(obj.ToString());
+
+            ///MessageBox.Show(s);
+
+            if (!s.Contains("]") || !s.Contains("["))
+            {
+                MessageBox.Show(s.ToString() + " Object: SP_STOCK_SCALE_TRANS_INSERT", "ElektraWeb", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw null;
+            }
+            JArray R = JArray.Parse(s);
+            if (Convert.ToBoolean(R[0][0]["SUCCESS"]) == false)
+            {
+                MessageBox.Show(R[0][0]["MESSAGE"].ToString(), "ElektraWeb", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw null;
+            }
+            if (Convert.ToBoolean(R[0][0]["SUCCESS"]) == true)
+            {
+                return R[0][0]["NEWTRANSIDS"].ToString();
+            }
+            else
+                return "";
         }
 
         public JObject PrintBarcode(int stokid, string partino, double miktar=0,double daramiktar=0)
@@ -1206,6 +1336,23 @@ namespace ArtEtiket
            // Parameters = Parameters1;
             return obj;
         }
+
+        //2021-06-20:TEOMAN, once database e TRANS insert olup oradan gelen parti no basılacak.
+        public JObject PrintLOTBarcode(string scaleTransactionIds, string lotno, string branchname)
+        {
+            JObject obj = new JObject();
+            obj["Action"] = "Execute";
+            obj["Object"] = "SP_STOCK_PRODUCTION_PRINTLOTBARCODE";
+            obj["LoginToken"] = api.LoginToken;
+
+            var Parameters = new JObject();
+            Parameters["SCALETRANSIDS"] = scaleTransactionIds.ToString();
+            Parameters["LOTNO"] = lotno;
+            Parameters["BRANCHNAME"] = branchname;
+            obj["Parameters"] = Parameters;
+            return obj;
+        }
+
 
         public string PartiNoUret(DateTime dt)
         {

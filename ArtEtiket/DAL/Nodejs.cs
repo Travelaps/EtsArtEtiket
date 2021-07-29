@@ -40,7 +40,6 @@ namespace ArtEtiket.DAL
                 {
                     System.Windows.Forms.MessageBox.Show(data.ToString(), "ElektraWeb", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
                     throw null;
-                   
                 }
                 JArray dataSets = new JArray();
                 dataSets = (JArray)JObject.Parse(data)["ResultSets"];

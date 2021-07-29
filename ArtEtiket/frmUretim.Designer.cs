@@ -51,12 +51,12 @@
             this.lblBakodOkutunuz = new System.Windows.Forms.Label();
             this.txtTekrarBarkod = new System.Windows.Forms.TextBox();
             this.btnTekrarEtiketBasmakIcinBarkodOkut = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnRefresh = new System.Windows.Forms.Button();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnRefresh = new System.Windows.Forms.Button();
             this.pnlMamuller.SuspendLayout();
             this.boxLeftPart.SuspendLayout();
             this.boxMiktar.SuspendLayout();
@@ -65,11 +65,11 @@
             this.pnlEtiketler.SuspendLayout();
             this.pnlKoliIslem.SuspendLayout();
             this.pnlTekrarEtiketBas.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlMamuller
@@ -325,6 +325,27 @@
             this.btnTekrarEtiketBasmakIcinBarkodOkut.UseVisualStyleBackColor = false;
             this.btnTekrarEtiketBasmakIcinBarkodOkut.Click += new System.EventHandler(this.btnTekrarEtiketBasmakIcinBarkodOkut_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnRefresh);
+            this.panel1.Location = new System.Drawing.Point(8, 409);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(296, 66);
+            this.panel1.TabIndex = 6;
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.Color.MediumBlue;
+            this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnRefresh.ForeColor = System.Drawing.Color.White;
+            this.btnRefresh.Location = new System.Drawing.Point(2, 8);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(293, 51);
+            this.btnRefresh.TabIndex = 8;
+            this.btnRefresh.Text = "Üretim Emirlerini Oku";
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -355,27 +376,6 @@
             // 
             this.timer2.Tick += new System.EventHandler(this.Timer2Tick);
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.btnRefresh);
-            this.panel1.Location = new System.Drawing.Point(8, 409);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(296, 66);
-            this.panel1.TabIndex = 6;
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.BackColor = System.Drawing.Color.MediumBlue;
-            this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnRefresh.ForeColor = System.Drawing.Color.White;
-            this.btnRefresh.Location = new System.Drawing.Point(2, 8);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(293, 51);
-            this.btnRefresh.TabIndex = 8;
-            this.btnRefresh.Text = "Üretim Emirlerini Oku";
-            this.btnRefresh.UseVisualStyleBackColor = false;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
-            // 
             // frmUretim
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -402,11 +402,11 @@
             this.pnlKoliIslem.PerformLayout();
             this.pnlTekrarEtiketBas.ResumeLayout(false);
             this.pnlTekrarEtiketBas.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

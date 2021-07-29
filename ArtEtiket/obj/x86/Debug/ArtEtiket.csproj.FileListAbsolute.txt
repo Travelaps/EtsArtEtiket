@@ -276,3 +276,40 @@ C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\obj\
 C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.exe
 C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.pdb
 C:\Users\SERKAN\Desktop\VS2017-Arteus-Uretim-WFA-master\ArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.csprojAssemblyReference.cache
+G:\Github\Talya\EtsArtEtiket\ArtEtiket\bin\Debug\raporlar\Arteus.ico
+G:\Github\Talya\EtsArtEtiket\ArtEtiket\bin\Debug\raporlar\Imren.png
+G:\Github\Talya\EtsArtEtiket\ArtEtiket\bin\Debug\raporlar\imrenRecel w100 x h53 mm.frx
+G:\Github\Talya\EtsArtEtiket\ArtEtiket\bin\Debug\raporlar\imrenTatli w100 x h53 mm.frx
+G:\Github\Talya\EtsArtEtiket\ArtEtiket\bin\Debug\raporlar\imrenTatli.frx
+G:\Github\Talya\EtsArtEtiket\ArtEtiket\bin\Debug\raporlar\imrenRecel.frx
+G:\Github\Talya\EtsArtEtiket\ArtEtiket\bin\Debug\raporlar\imrenRecel - Copy.frx
+G:\Github\Talya\EtsArtEtiket\ArtEtiket\bin\Debug\raporlar\imren.frx
+G:\Github\Talya\EtsArtEtiket\ArtEtiket\bin\Debug\ArtEtiket.exe.config
+G:\Github\Talya\EtsArtEtiket\ArtEtiket\bin\Debug\ArtEtiket.exe.manifest
+G:\Github\Talya\EtsArtEtiket\ArtEtiket\bin\Debug\ArtEtiket.application
+G:\Github\Talya\EtsArtEtiket\ArtEtiket\bin\Debug\ArtEtiket.exe
+G:\Github\Talya\EtsArtEtiket\ArtEtiket\bin\Debug\ArtEtiket.pdb
+G:\Github\Talya\EtsArtEtiket\ArtEtiket\bin\Debug\FastReport.Bars.dll
+G:\Github\Talya\EtsArtEtiket\ArtEtiket\bin\Debug\FastReport.Compat.dll
+G:\Github\Talya\EtsArtEtiket\ArtEtiket\bin\Debug\FastReport.dll
+G:\Github\Talya\EtsArtEtiket\ArtEtiket\bin\Debug\FastReport.Editor.dll
+G:\Github\Talya\EtsArtEtiket\ArtEtiket\bin\Debug\Microsoft.VisualStudio.Data.dll
+G:\Github\Talya\EtsArtEtiket\ArtEtiket\bin\Debug\Newtonsoft.Json.dll
+G:\Github\Talya\EtsArtEtiket\ArtEtiket\bin\Debug\Newtonsoft.Json.xml
+G:\Github\Talya\EtsArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.csprojResolveAssemblyReference.cache
+G:\Github\Talya\EtsArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.Form1.resources
+G:\Github\Talya\EtsArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.frmAdetSecim.resources
+G:\Github\Talya\EtsArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.frmConnections.resources
+G:\Github\Talya\EtsArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.frmFaturaDetay.resources
+G:\Github\Talya\EtsArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.frmLabel.resources
+G:\Github\Talya\EtsArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.frmMain.resources
+G:\Github\Talya\EtsArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.frmStok.resources
+G:\Github\Talya\EtsArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.frmStokDetay.resources
+G:\Github\Talya\EtsArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.frmParcalama.resources
+G:\Github\Talya\EtsArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.frmUretim.resources
+G:\Github\Talya\EtsArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.Properties.Resources.resources
+G:\Github\Talya\EtsArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.csproj.GenerateResource.Cache
+G:\Github\Talya\EtsArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.exe.manifest
+G:\Github\Talya\EtsArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.application
+G:\Github\Talya\EtsArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.exe
+G:\Github\Talya\EtsArtEtiket\ArtEtiket\obj\x86\Debug\ArtEtiket.pdb
